@@ -1,0 +1,134 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ars Pythonica",
+    "section": "",
+    "text": "Introduction\nArs Pythonica offers an introduction to programming in Python aimed at classical philologists who work with Greek and Latin texts and seek to incorporate digital humanities and distant reading methods into their research. No prior programming experience is required.\nBy the end, you should be able to read and write code and understand what it does, find and fix errors, be familiar with the fundamentals of Python syntax, apply basic pre-processing, data extraction, and data normalization methods, perform exploratory data analysis, and take first steps in using distant reading tools on your own textual corpora.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#how-the-course-works",
+    "href": "index.html#how-the-course-works",
+    "title": "Ars Pythonica",
+    "section": "How the course works",
+    "text": "How the course works\nThis book is a supplement to twelve weekly sessions of 90 minutes, plus an optional final hackathon-style session, during which we will aim to create, clean up, and structure your research corpora.\nThe course is structured as a flipped classroom: you learn the concepts at home via interactive courses, while in the session we do a quick recap, address challenges and issues, and then apply the newly acquired skills together to Greek and Latin texts.\n\nAt home:\n\nin Part I, assignments from futurecoder and Exercism, up to the checkpoint given in the schedule;\nin Part II, TBA.\n\nIn the session: a quick concept check, troubleshooting, hands-on workshop (e.g. installation, IDE setup, Jupyter notebooks, CLI, data extraction, corpus cleanup etc.), debugging, and results review.\n\nEvery session is still useful if you didn’t manage the home assignments, but it is nevertheless recommended to complete the basic exercises, since coding is a practical skill.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#using-ai",
+    "href": "index.html#using-ai",
+    "title": "Ars Pythonica",
+    "section": "Using AI",
+    "text": "Using AI\n\n\n\n\n\n\nTipGeneral practice\n\n\n\nYou can use AI to explain, not to code.\n\n\nThe aim of this course is not to produce impeccable coding solutions to problems, rather to allow participants to break code and experience as many errors as possible through practice and active debugging.\nTherefore, the use of AI is allowed on an honor system. To make it practical, feel free to use this tutor prompt or set it as custom instructions if you decide to use AI:\nI'm learning Python. Explain concepts and error messages, and ask me guiding questions. Don't give me the solution right away, don't write or fix code for me.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Ars Pythonica",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis book is inspired by Olga Alieva’s (locusclassicus @ GitHub) course Компьютерный анализ текста (Computer Text Analysis), as well as Melanie Walsh’s (melaniewalsh @ GitHub) book Introduction to Cultural Analytics & Python and Patrick J. Burns’ (diyclassics @ GitHub) work on LatinCy. My heartfelt thanks to my first Python mentor Daniil Skorinkin (danilsko @ GitHub).\n\n\nArs Pythonica is an informal, self-organised learning initiative by Lev Shadrin. It is not part of any curriculum and carries no ECTS credits.\nText © Lev Shadrin, CC BY-SA 4.0 Offenlegung gem. § 25 MedienG: Lev Shadrin, Innsbruck.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Part I: Fundamentals\nWeekly sessions of 90 minutes. Before the session is the home checkpoint to reach before we meet: chapters of futurecoder in Part I, readings in Part II. Selected Exercism exercises will be added along the way.",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#part-i-fundamentals",
+    "href": "schedule.html#part-i-fundamentals",
+    "title": "Schedule",
+    "section": "",
+    "text": "Session\nDate\nTopic\nBefore the session\n\n\n\n\n1\nTBA\nWhat is Python?\nNothing: it’s the first session 🎉 Bring a laptop with a web browser.\n\n\n2\nTBA\nEnvironments; variables and strings\nInstall Python (Setup);  futurecoder: The Shell, String Basics, Variables\n\n\n3\nTBA\nLoops and conditions\nfuturecoder: For Loops, If Statements\n\n\n4\nTBA\nLists and string methods\nfuturecoder: Lists (13 short pages)\n\n\n5\nTBA\nFunctions and nested structures\nfuturecoder: A Bit More About Strings, Nested Loops, Functions\n\n\n6\nTBA\nDictionaries and frequency lists\nfuturecoder: Boolean Operators, Dictionaries; optional: Tic Tac Toe Project\n\n\n7\nTBA\nFiles, batch processing, Unicode\nPython for Everybody, Chapter 7: Files",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#part-ii-applied-dh",
+    "href": "schedule.html#part-ii-applied-dh",
+    "title": "Schedule",
+    "section": "Part II: Applied DH",
+    "text": "Part II: Applied DH\n\n\n\nSession\nDate\nTopic\nBefore the session\n\n\n\n\n8\nTBA\nRegular expressions for corpus cleanup\nTBA\n\n\n9\nTBA\nXML and TEI\nTBA\n\n\n10\nTBA\npandas I: tables and missing data\nTBA\n\n\n11\nTBA\npandas II: exploration and plotting\nTBA\n\n\n12\nTBA\nDistant reading\nTBA\n\n\n13\nTBA\nPersonal projects hackathon\nTBA",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup",
+    "section": "",
+    "text": "1. Python\nBefore session 2, install two things: Python and the VS Code editor. Then run a two-line script to check that everything works.\nWe use Python 3.14 from python.org. It comes with IDLE, the simple editor we open in session 2.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#python",
+    "href": "setup.html#python",
+    "title": "Setup",
+    "section": "",
+    "text": "WindowsmacOS\n\n\n\nDownload the Python install manager from python.org/downloads/windows and install it.\nOpen Terminal / PowerShell or Command Prompt from the Start menu and type:\npy install 3.14\nIf it asks whether to add a folder to PATH or change other settings, accept.\nCheck the installation:\npy --version\nIt should print Python 3.14. followed by a number.\n\nIDLE is now in the Start menu under Python 3.14 → IDLE (Python 3.14).\nIf the install manager gives you trouble, the same page still offers the classic Windows installer (64-bit) for Python 3.14. On its first screen, tick Add python.exe to PATH before clicking Install Now.\n\n\n\nDownload the macOS installer for the latest Python 3.14 from python.org/downloads/macos and run it, accepting the defaults.\nAt the end, a Finder window opens the folder Applications → Python 3.14. Double-click Install Certificates.command there; it lets Python download files from the internet.\nOpen Terminal (in Applications → Utilities) and check the installation:\npython3 --version\nIt should print Python 3.14. followed by a number.\n\nIDLE is in Applications → Python 3.14 → IDLE.\n\n\n\n\n\n\n\n\n\nNoteAlready using conda?\n\n\n\nIf you already work with Anaconda, Miniconda or Miniforge, you can keep it: create an environment with conda create -n ars-pythonica python=3.14 and select it in VS Code (see section 3). The instructions in this book assume the python.org installation, so details may differ for you.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#vs-code",
+    "href": "setup.html#vs-code",
+    "title": "Setup",
+    "section": "2. VS Code",
+    "text": "2. VS Code\nVS Code is the editor we use from session 2 on. It needs the Python extension to run Python code.\n\nWindowsmacOS\n\n\n\nDownload the Windows User Installer from code.visualstudio.com/download and run it. Keep Add to PATH ticked.\nOpen VS Code, press Ctrl+Shift+X (Extensions), search for Python, and install the extension by Microsoft.\nSearch for Jupyter and install the extension by Microsoft, so that VS Code can open Jupyter notebooks (.ipynb files).\n\n\n\n\nDownload the Mac version from code.visualstudio.com/download, open the download, and move Visual Studio Code into Applications.\nOpen VS Code, press Cmd+Shift+X (Extensions), search for Python, and install the extension by Microsoft.\nSearch for Jupyter and install the extension by Microsoft, so that VS Code can open Jupyter notebooks (.ipynb files).\n\n\n\n\n\n\n\n\n\n\nNoteDon’t forget about ipykernel\n\n\n\nWhen you create or open an .ipynb notebook for the first time and run any cell, VS Code may prompt you to install ipykernel - this package is necessary to execute Jupyter notebook code. Accept and install.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#did-it-work",
+    "href": "setup.html#did-it-work",
+    "title": "Setup",
+    "section": "3. Did it work?",
+    "text": "3. Did it work?\n\nCreate a local folder for the course, e.g. ars-pythonica, and open it in VS Code (File → Open Folder).\nCreate a new file hello.py in it and type or paste:\ngreeting = 'χαῖρε, κόσμε'\nprint(greeting)\nSave the file and click the ▷ button (Run Python File) in the top right corner. If VS Code asks for an interpreter, choose Python 3.14.\n\n\nWindowsmacOS\n\n\nThe terminal at the bottom should show:\nχαῖρε, κόσμε\nIf VS Code can’t find Python, press Ctrl+Shift+P, run Python: Select Interpreter, and choose Python 3.14.\n\n\nThe terminal at the bottom should show:\nχαῖρε, κόσμε\nIf VS Code can’t find Python, press Cmd+Shift+P, run Python: Select Interpreter, and choose Python 3.14.\n\n\n\nCheck the accents and breathings in both the editor and the terminal. If something fails, save the error message (copied as text, or a screenshot) and bring it along so that we can discuss it.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html",
+    "href": "part1/01-what-is-python.html",
+    "title": "1  What is Python?",
+    "section": "",
+    "text": "TODO: session 1.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html",
+    "href": "part2/08-regular-expressions.html",
+    "title": "2  Regular expressions for corpus cleanup",
+    "section": "",
+    "text": "TODO: session 8.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  }
+]
