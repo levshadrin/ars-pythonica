@@ -1,4 +1,4 @@
-# What is Python?
+# pandas I: tables and missing data
 
 ## History
 

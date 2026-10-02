@@ -10,13 +10,13 @@ the way.
 
 | Session | Date | Topic | Before the session |
 |---|---|---|---|
-| 1 | *TBA* | What is Python? | Nothing: it's the first session 🎉 Bring a laptop with a web browser. |
-| 2 | *TBA* | Environments; variables and strings | Install Python ([Setup](setup.qmd)); <br> [futurecoder](https://futurecoder.io/course/#toc): *The Shell*, *String Basics*, *Variables* |
-| 3 | *TBA* | Loops and conditions | [futurecoder](https://futurecoder.io/course/#toc): *For Loops*, *If Statements* |
-| 4 | *TBA* | Lists and string methods | [futurecoder](https://futurecoder.io/course/#toc): *Lists* (13 short pages) |
-| 5 | *TBA* | Functions and nested structures | [futurecoder](https://futurecoder.io/course/#toc): *A Bit More About Strings*, *Nested Loops*, *Functions* |
-| 6 | *TBA* | Dictionaries and frequency lists | [futurecoder](https://futurecoder.io/course/#toc): *Boolean Operators*, *Dictionaries*; optional: *Tic Tac Toe Project* |
-| 7 | *TBA* | Files, batch processing, Unicode | *Python for Everybody*, [Chapter 7: Files](https://www.py4e.com/html3/07-files) |
+| 1 | *TBA* | [What is Python?](part1/01-what-is-python.qmd) | Nothing: it's the first session 🎉 Bring a laptop with a web browser. |
+| 2 | *TBA* | [Environments; variables and strings](part1/02-variables-and-strings.qmd) | Install Python ([Setup](setup.qmd)); <br> [futurecoder](https://futurecoder.io/course/#toc): *The Shell*, *String Basics*, *Variables* |
+| 3 | *TBA* | [Loops and conditions](part1/03-loops-and-conditions.qmd) | [futurecoder](https://futurecoder.io/course/#toc): *For Loops*, *If Statements* |
+| 4 | *TBA* | [Lists and string methods](part1/04-lists-and-string-methods.qmd) | [futurecoder](https://futurecoder.io/course/#toc): *Lists* (13 short pages) |
+| 5 | *TBA* | [Functions and nested structures](part1/05-functions-and-nested-structures.qmd) | [futurecoder](https://futurecoder.io/course/#toc): *A Bit More About Strings*, *Nested Loops*, *Functions* |
+| 6 | *TBA* | [Dictionaries and frequency lists](part1/06-dictionaries-and-frequency-lists.qmd) | [futurecoder](https://futurecoder.io/course/#toc): *Boolean Operators*, *Dictionaries*; optional: *Tic Tac Toe Project* |
+| 7 | *TBA* | [Files, batch processing, Unicode](part1/07-files-batch-processing-unicode.qmd) | *Python for Everybody*, [Chapter 7: Files](https://www.py4e.com/html3/07-files) |
 
 : {.striped .hover}
 
@@ -24,11 +24,11 @@ the way.
 
 | Session | Date | Topic | Before the session |
 |---|---|---|---|
-| 8 | *TBA* | Regular expressions for corpus cleanup | *TBA* |
-| 9 | *TBA* | XML and TEI | *TBA* |
-| 10 | *TBA* | pandas I: tables and missing data | *TBA* |
-| 11 | *TBA* | pandas II: exploration and plotting | *TBA* |
-| 12 | *TBA* | Distant reading | *TBA* |
-| 13 | *TBA* | Personal projects hackathon | *TBA* |
+| 8 | *TBA* | [Regular expressions for corpus cleanup](part2/08-regular-expressions.qmd) | *TBA* |
+| 9 | *TBA* | [XML and TEI](part2/09-xml-and-tei.qmd) | *TBA* |
+| 10 | *TBA* | [pandas I: tables and missing data](part2/10-pandas-tables-and-missing-data.qmd) | *TBA* |
+| 11 | *TBA* | [pandas II: exploration and plotting](part2/11-pandas-exploration-and-plotting.qmd) | *TBA* |
+| 12 | *TBA* | [Distant reading](part2/12-distant-reading.qmd) | *TBA* |
+| 13 | *TBA* | [Personal projects hackathon](part2/13-personal-projects-hackathon.qmd) | *TBA* |
 
 : {.striped .hover}

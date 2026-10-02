@@ -1,4 +1,4 @@
-# What is Python?
+# XML and TEI
 
 ## History
 

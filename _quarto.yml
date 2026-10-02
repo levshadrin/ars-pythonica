@@ -27,9 +27,20 @@ book:
     - part: "Part I: Fundamentals"
       chapters:
         - part1/01-what-is-python.qmd
+        - part1/02-variables-and-strings.qmd
+        - part1/03-loops-and-conditions.qmd
+        - part1/04-lists-and-string-methods.qmd
+        - part1/05-functions-and-nested-structures.qmd
+        - part1/06-dictionaries-and-frequency-lists.qmd
+        - part1/07-files-batch-processing-unicode.qmd
     - part: "Part II: Applied DH"
       chapters:
         - part2/08-regular-expressions.qmd
+        - part2/09-xml-and-tei.qmd
+        - part2/10-pandas-tables-and-missing-data.qmd
+        - part2/11-pandas-exploration-and-plotting.qmd
+        - part2/12-distant-reading.qmd
+        - part2/13-personal-projects-hackathon.qmd
 
 format:
   html:

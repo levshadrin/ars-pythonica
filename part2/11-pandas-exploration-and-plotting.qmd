@@ -1,4 +1,4 @@
-# What is Python?
+# pandas II: exploration and plotting
 
 ## History
 

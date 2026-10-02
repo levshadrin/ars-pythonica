@@ -1,3 +1,25 @@
 # Regular expressions for corpus cleanup
 
-TODO: session 8.
+## History
+
+*Coming soon.*
+
+## Before this session
+
+*Coming soon.*
+
+## Concept check
+
+*Coming soon.*
+
+## Lab
+
+*Coming soon.*
+
+## Take-home extension
+
+*Coming soon.*
+
+## Further reading
+
+*Coming soon.*
