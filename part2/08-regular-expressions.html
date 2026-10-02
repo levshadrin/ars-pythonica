@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Regular expressions for corpus cleanup – Ars Pythonica</title>
+<title>8&nbsp; Regular expressions for corpus cleanup – Ars Pythonica</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,7 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../part1/01-what-is-python.html" rel="prev">
+<link href="../part2/09-xml-and-tei.html" rel="next">
+<link href="../part1/07-files-batch-processing-unicode.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -253,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html">Part II: Applied DH</a></li><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html">Part II: Applied DH</a></li><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -315,6 +316,42 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Python?</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/02-variables-and-strings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Environments; variables and strings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/03-loops-and-conditions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Loops and conditions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/04-lists-and-string-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lists and string methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/05-functions-and-nested-structures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Functions and nested structures</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/06-dictionaries-and-frequency-lists.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dictionaries and frequency lists</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part1/07-files-batch-processing-unicode.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -329,7 +366,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../part2/08-regular-expressions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part2/09-xml-and-tei.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">XML and TEI</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part2/10-pandas-tables-and-missing-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">pandas I: tables and missing data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part2/11-pandas-exploration-and-plotting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">pandas II: exploration and plotting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part2/12-distant-reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distant reading</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../part2/13-personal-projects-hackathon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Personal projects hackathon</span></span></a>
   </div>
 </li>
       </ul>
@@ -339,16 +406,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#history" id="toc-history" class="nav-link active" data-scroll-target="#history"><span class="header-section-number">8.1</span> History</a></li>
+  <li><a href="#before-this-session" id="toc-before-this-session" class="nav-link" data-scroll-target="#before-this-session"><span class="header-section-number">8.2</span> Before this session</a></li>
+  <li><a href="#concept-check" id="toc-concept-check" class="nav-link" data-scroll-target="#concept-check"><span class="header-section-number">8.3</span> Concept check</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">8.4</span> Lab</a></li>
+  <li><a href="#take-home-extension" id="toc-take-home-extension" class="nav-link" data-scroll-target="#take-home-extension"><span class="header-section-number">8.5</span> Take-home extension</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">8.6</span> Further reading</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html">Part II: Applied DH</a></li><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html">Part II: Applied DH</a></li><li class="breadcrumb-item"><a href="../part2/08-regular-expressions.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></h1>
 </div>
 
 
@@ -365,9 +443,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TODO: session 8.</p>
+<section id="history" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="history"><span class="header-section-number">8.1</span> History</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="before-this-session" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="before-this-session"><span class="header-section-number">8.2</span> Before this session</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="concept-check" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="concept-check"><span class="header-section-number">8.3</span> Concept check</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="lab" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="lab"><span class="header-section-number">8.4</span> Lab</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="take-home-extension" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="take-home-extension"><span class="header-section-number">8.5</span> Take-home extension</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="further-reading" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">8.6</span> Further reading</h2>
+<p><em>Coming soon.</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -785,11 +886,14 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../part1/01-what-is-python.html" class="pagination-link" aria-label="What is Python?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Python?</span></span>
+      <a href="../part1/07-files-batch-processing-unicode.html" class="pagination-link" aria-label="Files, batch processing, Unicode">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../part2/09-xml-and-tei.html" class="pagination-link" aria-label="XML and TEI">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">XML and TEI</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

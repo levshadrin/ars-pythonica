@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schedule – Ars Pythonica</title>
+<title>7&nbsp; Files, batch processing, Unicode – Ars Pythonica</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,29 +29,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./setup.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1cd4ae7b5702209ce84e667b0d3ef2ea.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-501767b24a9d04c6e29dc621d87188c4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1cd4ae7b5702209ce84e667b0d3ef2ea.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-bc6a12d828405b7e4911f4a45df2585c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../part2/08-regular-expressions.html" rel="next">
+<link href="../part1/06-dictionaries-and-frequency-lists.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1cd4ae7b5702209ce84e667b0d3ef2ea.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-501767b24a9d04c6e29dc621d87188c4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1cd4ae7b5702209ce84e667b0d3ef2ea.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bc6a12d828405b7e4911f4a45df2585c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -254,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./schedule.html">Schedule</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part1/01-what-is-python.html">Part I: Fundamentals</a></li><li class="breadcrumb-item"><a href="../part1/07-files-batch-processing-unicode.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Ars Pythonica</a> 
+      <a href="../">Ars Pythonica</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/levshadrin/ars-pythonica" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -285,19 +285,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+  <a href="../setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup</span></a>
   </div>
 </li>
@@ -312,43 +312,43 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/01-what-is-python.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/01-what-is-python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Python?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/02-variables-and-strings.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/02-variables-and-strings.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Environments; variables and strings</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/03-loops-and-conditions.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/03-loops-and-conditions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Loops and conditions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/04-lists-and-string-methods.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/04-lists-and-string-methods.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lists and string methods</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/05-functions-and-nested-structures.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/05-functions-and-nested-structures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Functions and nested structures</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/06-dictionaries-and-frequency-lists.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/06-dictionaries-and-frequency-lists.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dictionaries and frequency lists</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part1/07-files-batch-processing-unicode.html" class="sidebar-item-text sidebar-link">
+  <a href="../part1/07-files-batch-processing-unicode.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></span></a>
   </div>
 </li>
@@ -365,37 +365,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/08-regular-expressions.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/08-regular-expressions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/09-xml-and-tei.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/09-xml-and-tei.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">XML and TEI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/10-pandas-tables-and-missing-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/10-pandas-tables-and-missing-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">pandas I: tables and missing data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/11-pandas-exploration-and-plotting.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/11-pandas-exploration-and-plotting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">pandas II: exploration and plotting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/12-distant-reading.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/12-distant-reading.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distant reading</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./part2/13-personal-projects-hackathon.html" class="sidebar-item-text sidebar-link">
+  <a href="../part2/13-personal-projects-hackathon.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Personal projects hackathon</span></span></a>
   </div>
 </li>
@@ -411,8 +411,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#part-i-fundamentals" id="toc-part-i-fundamentals" class="nav-link active" data-scroll-target="#part-i-fundamentals">Part I: Fundamentals</a></li>
-  <li><a href="#part-ii-applied-dh" id="toc-part-ii-applied-dh" class="nav-link" data-scroll-target="#part-ii-applied-dh">Part II: Applied DH</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link active" data-scroll-target="#history"><span class="header-section-number">7.1</span> History</a></li>
+  <li><a href="#before-this-session" id="toc-before-this-session" class="nav-link" data-scroll-target="#before-this-session"><span class="header-section-number">7.2</span> Before this session</a></li>
+  <li><a href="#concept-check" id="toc-concept-check" class="nav-link" data-scroll-target="#concept-check"><span class="header-section-number">7.3</span> Concept check</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">7.4</span> Lab</a></li>
+  <li><a href="#take-home-extension" id="toc-take-home-extension" class="nav-link" data-scroll-target="#take-home-extension"><span class="header-section-number">7.5</span> Take-home extension</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">7.6</span> Further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -420,9 +424,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part1/01-what-is-python.html">Part I: Fundamentals</a></li><li class="breadcrumb-item"><a href="../part1/07-files-batch-processing-unicode.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Files, batch processing, Unicode</span></h1>
 </div>
 
 
@@ -439,114 +443,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Weekly sessions of 90 minutes. <strong>Before the session</strong> is the home checkpoint to reach before we meet: chapters of <a href="https://futurecoder.io/course/#toc">futurecoder</a> in Part I, readings in Part II. Selected <a href="https://exercism.org/tracks/python">Exercism</a> exercises will be added along the way.</p>
-<section id="part-i-fundamentals" class="level2">
-<h2 class="anchored" data-anchor-id="part-i-fundamentals">Part I: Fundamentals</h2>
-<table class="table-striped table-hover caption-top table">
-<thead>
-<tr class="header">
-<th>Session</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Before the session</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/01-what-is-python.html">What is Python?</a></td>
-<td>Nothing: it’s the first session 🎉 Bring a laptop with a web browser.</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/02-variables-and-strings.html">Environments; variables and strings</a></td>
-<td>Install Python (<a href="./setup.html">Setup</a>); <br> <a href="https://futurecoder.io/course/#toc">futurecoder</a>: <em>The Shell</em>, <em>String Basics</em>, <em>Variables</em></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/03-loops-and-conditions.html">Loops and conditions</a></td>
-<td><a href="https://futurecoder.io/course/#toc">futurecoder</a>: <em>For Loops</em>, <em>If Statements</em></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/04-lists-and-string-methods.html">Lists and string methods</a></td>
-<td><a href="https://futurecoder.io/course/#toc">futurecoder</a>: <em>Lists</em> (13 short pages)</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/05-functions-and-nested-structures.html">Functions and nested structures</a></td>
-<td><a href="https://futurecoder.io/course/#toc">futurecoder</a>: <em>A Bit More About Strings</em>, <em>Nested Loops</em>, <em>Functions</em></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/06-dictionaries-and-frequency-lists.html">Dictionaries and frequency lists</a></td>
-<td><a href="https://futurecoder.io/course/#toc">futurecoder</a>: <em>Boolean Operators</em>, <em>Dictionaries</em>; optional: <em>Tic Tac Toe Project</em></td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td><em>TBA</em></td>
-<td><a href="./part1/07-files-batch-processing-unicode.html">Files, batch processing, Unicode</a></td>
-<td><em>Python for Everybody</em>, <a href="https://www.py4e.com/html3/07-files">Chapter 7: Files</a></td>
-</tr>
-</tbody>
-</table>
+<section id="history" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="history"><span class="header-section-number">7.1</span> History</h2>
+<p><em>Coming soon.</em></p>
 </section>
-<section id="part-ii-applied-dh" class="level2">
-<h2 class="anchored" data-anchor-id="part-ii-applied-dh">Part II: Applied DH</h2>
-<table class="table-striped table-hover caption-top table">
-<thead>
-<tr class="header">
-<th>Session</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Before the session</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>8</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/08-regular-expressions.html">Regular expressions for corpus cleanup</a></td>
-<td><em>TBA</em></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/09-xml-and-tei.html">XML and TEI</a></td>
-<td><em>TBA</em></td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/10-pandas-tables-and-missing-data.html">pandas I: tables and missing data</a></td>
-<td><em>TBA</em></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/11-pandas-exploration-and-plotting.html">pandas II: exploration and plotting</a></td>
-<td><em>TBA</em></td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/12-distant-reading.html">Distant reading</a></td>
-<td><em>TBA</em></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td><em>TBA</em></td>
-<td><a href="./part2/13-personal-projects-hackathon.html">Personal projects hackathon</a></td>
-<td><em>TBA</em></td>
-</tr>
-</tbody>
-</table>
+<section id="before-this-session" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="before-this-session"><span class="header-section-number">7.2</span> Before this session</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="concept-check" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="concept-check"><span class="header-section-number">7.3</span> Concept check</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="lab" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="lab"><span class="header-section-number">7.4</span> Lab</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="take-home-extension" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="take-home-extension"><span class="header-section-number">7.5</span> Take-home extension</h2>
+<p><em>Coming soon.</em></p>
+</section>
+<section id="further-reading" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">7.6</span> Further reading</h2>
+<p><em>Coming soon.</em></p>
 
 
 </section>
@@ -967,13 +886,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../part1/06-dictionaries-and-frequency-lists.html" class="pagination-link" aria-label="Dictionaries and frequency lists">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Dictionaries and frequency lists</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./setup.html" class="pagination-link" aria-label="Setup">
-        <span class="nav-page-text">Setup</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../part2/08-regular-expressions.html" class="pagination-link" aria-label="Regular expressions for corpus cleanup">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regular expressions for corpus cleanup</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -114,21 +114,857 @@
     "href": "part1/01-what-is-python.html",
     "title": "1  What is Python?",
     "section": "",
-    "text": "TODO: session 1.",
+    "text": "1.1 History\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
     ]
   },
   {
+    "objectID": "part1/01-what-is-python.html#before-this-session",
+    "href": "part1/01-what-is-python.html#before-this-session",
+    "title": "1  What is Python?",
+    "section": "1.2 Before this session",
+    "text": "1.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#concept-check",
+    "href": "part1/01-what-is-python.html#concept-check",
+    "title": "1  What is Python?",
+    "section": "1.3 Concept check",
+    "text": "1.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#lab",
+    "href": "part1/01-what-is-python.html#lab",
+    "title": "1  What is Python?",
+    "section": "1.4 Lab",
+    "text": "1.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#take-home-extension",
+    "href": "part1/01-what-is-python.html#take-home-extension",
+    "title": "1  What is Python?",
+    "section": "1.5 Take-home extension",
+    "text": "1.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#further-reading",
+    "href": "part1/01-what-is-python.html#further-reading",
+    "title": "1  What is Python?",
+    "section": "1.6 Further reading",
+    "text": "1.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html",
+    "href": "part1/02-variables-and-strings.html",
+    "title": "2  Environments; variables and strings",
+    "section": "",
+    "text": "2.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html#before-this-session",
+    "href": "part1/02-variables-and-strings.html#before-this-session",
+    "title": "2  Environments; variables and strings",
+    "section": "2.2 Before this session",
+    "text": "2.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html#concept-check",
+    "href": "part1/02-variables-and-strings.html#concept-check",
+    "title": "2  Environments; variables and strings",
+    "section": "2.3 Concept check",
+    "text": "2.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html#lab",
+    "href": "part1/02-variables-and-strings.html#lab",
+    "title": "2  Environments; variables and strings",
+    "section": "2.4 Lab",
+    "text": "2.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html#take-home-extension",
+    "href": "part1/02-variables-and-strings.html#take-home-extension",
+    "title": "2  Environments; variables and strings",
+    "section": "2.5 Take-home extension",
+    "text": "2.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/02-variables-and-strings.html#further-reading",
+    "href": "part1/02-variables-and-strings.html#further-reading",
+    "title": "2  Environments; variables and strings",
+    "section": "2.6 Further reading",
+    "text": "2.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Environments; variables and strings</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html",
+    "href": "part1/03-loops-and-conditions.html",
+    "title": "3  Loops and conditions",
+    "section": "",
+    "text": "3.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html#before-this-session",
+    "href": "part1/03-loops-and-conditions.html#before-this-session",
+    "title": "3  Loops and conditions",
+    "section": "3.2 Before this session",
+    "text": "3.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html#concept-check",
+    "href": "part1/03-loops-and-conditions.html#concept-check",
+    "title": "3  Loops and conditions",
+    "section": "3.3 Concept check",
+    "text": "3.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html#lab",
+    "href": "part1/03-loops-and-conditions.html#lab",
+    "title": "3  Loops and conditions",
+    "section": "3.4 Lab",
+    "text": "3.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html#take-home-extension",
+    "href": "part1/03-loops-and-conditions.html#take-home-extension",
+    "title": "3  Loops and conditions",
+    "section": "3.5 Take-home extension",
+    "text": "3.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/03-loops-and-conditions.html#further-reading",
+    "href": "part1/03-loops-and-conditions.html#further-reading",
+    "title": "3  Loops and conditions",
+    "section": "3.6 Further reading",
+    "text": "3.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Loops and conditions</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html",
+    "href": "part1/04-lists-and-string-methods.html",
+    "title": "4  Lists and string methods",
+    "section": "",
+    "text": "4.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html#before-this-session",
+    "href": "part1/04-lists-and-string-methods.html#before-this-session",
+    "title": "4  Lists and string methods",
+    "section": "4.2 Before this session",
+    "text": "4.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html#concept-check",
+    "href": "part1/04-lists-and-string-methods.html#concept-check",
+    "title": "4  Lists and string methods",
+    "section": "4.3 Concept check",
+    "text": "4.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html#lab",
+    "href": "part1/04-lists-and-string-methods.html#lab",
+    "title": "4  Lists and string methods",
+    "section": "4.4 Lab",
+    "text": "4.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html#take-home-extension",
+    "href": "part1/04-lists-and-string-methods.html#take-home-extension",
+    "title": "4  Lists and string methods",
+    "section": "4.5 Take-home extension",
+    "text": "4.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/04-lists-and-string-methods.html#further-reading",
+    "href": "part1/04-lists-and-string-methods.html#further-reading",
+    "title": "4  Lists and string methods",
+    "section": "4.6 Further reading",
+    "text": "4.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lists and string methods</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html",
+    "href": "part1/05-functions-and-nested-structures.html",
+    "title": "5  Functions and nested structures",
+    "section": "",
+    "text": "5.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html#before-this-session",
+    "href": "part1/05-functions-and-nested-structures.html#before-this-session",
+    "title": "5  Functions and nested structures",
+    "section": "5.2 Before this session",
+    "text": "5.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html#concept-check",
+    "href": "part1/05-functions-and-nested-structures.html#concept-check",
+    "title": "5  Functions and nested structures",
+    "section": "5.3 Concept check",
+    "text": "5.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html#lab",
+    "href": "part1/05-functions-and-nested-structures.html#lab",
+    "title": "5  Functions and nested structures",
+    "section": "5.4 Lab",
+    "text": "5.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html#take-home-extension",
+    "href": "part1/05-functions-and-nested-structures.html#take-home-extension",
+    "title": "5  Functions and nested structures",
+    "section": "5.5 Take-home extension",
+    "text": "5.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/05-functions-and-nested-structures.html#further-reading",
+    "href": "part1/05-functions-and-nested-structures.html#further-reading",
+    "title": "5  Functions and nested structures",
+    "section": "5.6 Further reading",
+    "text": "5.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Functions and nested structures</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html",
+    "href": "part1/06-dictionaries-and-frequency-lists.html",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "",
+    "text": "6.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html#before-this-session",
+    "href": "part1/06-dictionaries-and-frequency-lists.html#before-this-session",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "6.2 Before this session",
+    "text": "6.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html#concept-check",
+    "href": "part1/06-dictionaries-and-frequency-lists.html#concept-check",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "6.3 Concept check",
+    "text": "6.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html#lab",
+    "href": "part1/06-dictionaries-and-frequency-lists.html#lab",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "6.4 Lab",
+    "text": "6.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html#take-home-extension",
+    "href": "part1/06-dictionaries-and-frequency-lists.html#take-home-extension",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "6.5 Take-home extension",
+    "text": "6.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/06-dictionaries-and-frequency-lists.html#further-reading",
+    "href": "part1/06-dictionaries-and-frequency-lists.html#further-reading",
+    "title": "6  Dictionaries and frequency lists",
+    "section": "6.6 Further reading",
+    "text": "6.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Dictionaries and frequency lists</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html",
+    "href": "part1/07-files-batch-processing-unicode.html",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "",
+    "text": "7.1 History\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html#before-this-session",
+    "href": "part1/07-files-batch-processing-unicode.html#before-this-session",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "7.2 Before this session",
+    "text": "7.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html#concept-check",
+    "href": "part1/07-files-batch-processing-unicode.html#concept-check",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "7.3 Concept check",
+    "text": "7.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html#lab",
+    "href": "part1/07-files-batch-processing-unicode.html#lab",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "7.4 Lab",
+    "text": "7.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html#take-home-extension",
+    "href": "part1/07-files-batch-processing-unicode.html#take-home-extension",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "7.5 Take-home extension",
+    "text": "7.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
+    "objectID": "part1/07-files-batch-processing-unicode.html#further-reading",
+    "href": "part1/07-files-batch-processing-unicode.html#further-reading",
+    "title": "7  Files, batch processing, Unicode",
+    "section": "7.6 Further reading",
+    "text": "7.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Files, batch processing, Unicode</span>"
+    ]
+  },
+  {
     "objectID": "part2/08-regular-expressions.html",
     "href": "part2/08-regular-expressions.html",
-    "title": "2  Regular expressions for corpus cleanup",
+    "title": "8  Regular expressions for corpus cleanup",
     "section": "",
-    "text": "TODO: session 8.",
+    "text": "8.1 History\nComing soon.",
     "crumbs": [
       "Part II: Applied DH",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html#before-this-session",
+    "href": "part2/08-regular-expressions.html#before-this-session",
+    "title": "8  Regular expressions for corpus cleanup",
+    "section": "8.2 Before this session",
+    "text": "8.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html#concept-check",
+    "href": "part2/08-regular-expressions.html#concept-check",
+    "title": "8  Regular expressions for corpus cleanup",
+    "section": "8.3 Concept check",
+    "text": "8.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html#lab",
+    "href": "part2/08-regular-expressions.html#lab",
+    "title": "8  Regular expressions for corpus cleanup",
+    "section": "8.4 Lab",
+    "text": "8.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html#take-home-extension",
+    "href": "part2/08-regular-expressions.html#take-home-extension",
+    "title": "8  Regular expressions for corpus cleanup",
+    "section": "8.5 Take-home extension",
+    "text": "8.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/08-regular-expressions.html#further-reading",
+    "href": "part2/08-regular-expressions.html#further-reading",
+    "title": "8  Regular expressions for corpus cleanup",
+    "section": "8.6 Further reading",
+    "text": "8.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regular expressions for corpus cleanup</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html",
+    "href": "part2/09-xml-and-tei.html",
+    "title": "9  XML and TEI",
+    "section": "",
+    "text": "9.1 History\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html#before-this-session",
+    "href": "part2/09-xml-and-tei.html#before-this-session",
+    "title": "9  XML and TEI",
+    "section": "9.2 Before this session",
+    "text": "9.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html#concept-check",
+    "href": "part2/09-xml-and-tei.html#concept-check",
+    "title": "9  XML and TEI",
+    "section": "9.3 Concept check",
+    "text": "9.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html#lab",
+    "href": "part2/09-xml-and-tei.html#lab",
+    "title": "9  XML and TEI",
+    "section": "9.4 Lab",
+    "text": "9.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html#take-home-extension",
+    "href": "part2/09-xml-and-tei.html#take-home-extension",
+    "title": "9  XML and TEI",
+    "section": "9.5 Take-home extension",
+    "text": "9.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/09-xml-and-tei.html#further-reading",
+    "href": "part2/09-xml-and-tei.html#further-reading",
+    "title": "9  XML and TEI",
+    "section": "9.6 Further reading",
+    "text": "9.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>XML and TEI</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html",
+    "href": "part2/10-pandas-tables-and-missing-data.html",
+    "title": "10  pandas I: tables and missing data",
+    "section": "",
+    "text": "10.1 History\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html#before-this-session",
+    "href": "part2/10-pandas-tables-and-missing-data.html#before-this-session",
+    "title": "10  pandas I: tables and missing data",
+    "section": "10.2 Before this session",
+    "text": "10.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html#concept-check",
+    "href": "part2/10-pandas-tables-and-missing-data.html#concept-check",
+    "title": "10  pandas I: tables and missing data",
+    "section": "10.3 Concept check",
+    "text": "10.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html#lab",
+    "href": "part2/10-pandas-tables-and-missing-data.html#lab",
+    "title": "10  pandas I: tables and missing data",
+    "section": "10.4 Lab",
+    "text": "10.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html#take-home-extension",
+    "href": "part2/10-pandas-tables-and-missing-data.html#take-home-extension",
+    "title": "10  pandas I: tables and missing data",
+    "section": "10.5 Take-home extension",
+    "text": "10.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/10-pandas-tables-and-missing-data.html#further-reading",
+    "href": "part2/10-pandas-tables-and-missing-data.html#further-reading",
+    "title": "10  pandas I: tables and missing data",
+    "section": "10.6 Further reading",
+    "text": "10.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>pandas I: tables and missing data</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html",
+    "href": "part2/11-pandas-exploration-and-plotting.html",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "",
+    "text": "11.1 History\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html#before-this-session",
+    "href": "part2/11-pandas-exploration-and-plotting.html#before-this-session",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "11.2 Before this session",
+    "text": "11.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html#concept-check",
+    "href": "part2/11-pandas-exploration-and-plotting.html#concept-check",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "11.3 Concept check",
+    "text": "11.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html#lab",
+    "href": "part2/11-pandas-exploration-and-plotting.html#lab",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "11.4 Lab",
+    "text": "11.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html#take-home-extension",
+    "href": "part2/11-pandas-exploration-and-plotting.html#take-home-extension",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "11.5 Take-home extension",
+    "text": "11.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/11-pandas-exploration-and-plotting.html#further-reading",
+    "href": "part2/11-pandas-exploration-and-plotting.html#further-reading",
+    "title": "11  pandas II: exploration and plotting",
+    "section": "11.6 Further reading",
+    "text": "11.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>pandas II: exploration and plotting</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html",
+    "href": "part2/12-distant-reading.html",
+    "title": "12  Distant reading",
+    "section": "",
+    "text": "12.1 History\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html#before-this-session",
+    "href": "part2/12-distant-reading.html#before-this-session",
+    "title": "12  Distant reading",
+    "section": "12.2 Before this session",
+    "text": "12.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html#concept-check",
+    "href": "part2/12-distant-reading.html#concept-check",
+    "title": "12  Distant reading",
+    "section": "12.3 Concept check",
+    "text": "12.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html#lab",
+    "href": "part2/12-distant-reading.html#lab",
+    "title": "12  Distant reading",
+    "section": "12.4 Lab",
+    "text": "12.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html#take-home-extension",
+    "href": "part2/12-distant-reading.html#take-home-extension",
+    "title": "12  Distant reading",
+    "section": "12.5 Take-home extension",
+    "text": "12.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/12-distant-reading.html#further-reading",
+    "href": "part2/12-distant-reading.html#further-reading",
+    "title": "12  Distant reading",
+    "section": "12.6 Further reading",
+    "text": "12.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Distant reading</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html",
+    "href": "part2/13-personal-projects-hackathon.html",
+    "title": "13  Personal projects hackathon",
+    "section": "",
+    "text": "13.1 History\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html#before-this-session",
+    "href": "part2/13-personal-projects-hackathon.html#before-this-session",
+    "title": "13  Personal projects hackathon",
+    "section": "13.2 Before this session",
+    "text": "13.2 Before this session\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html#concept-check",
+    "href": "part2/13-personal-projects-hackathon.html#concept-check",
+    "title": "13  Personal projects hackathon",
+    "section": "13.3 Concept check",
+    "text": "13.3 Concept check\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html#lab",
+    "href": "part2/13-personal-projects-hackathon.html#lab",
+    "title": "13  Personal projects hackathon",
+    "section": "13.4 Lab",
+    "text": "13.4 Lab\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html#take-home-extension",
+    "href": "part2/13-personal-projects-hackathon.html#take-home-extension",
+    "title": "13  Personal projects hackathon",
+    "section": "13.5 Take-home extension",
+    "text": "13.5 Take-home extension\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
+    ]
+  },
+  {
+    "objectID": "part2/13-personal-projects-hackathon.html#further-reading",
+    "href": "part2/13-personal-projects-hackathon.html#further-reading",
+    "title": "13  Personal projects hackathon",
+    "section": "13.6 Further reading",
+    "text": "13.6 Further reading\nComing soon.",
+    "crumbs": [
+      "Part II: Applied DH",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Personal projects hackathon</span>"
     ]
   }
 ]
