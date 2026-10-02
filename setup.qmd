@@ -1,0 +1,138 @@
+# Setup {.unnumbered}
+
+Before session 2, install two things: Python and the VS Code editor. Then run
+a two-line script to check that everything works. 
+
+## 1. Python
+
+We use Python **3.14** from [python.org](https://www.python.org/downloads/).
+It comes with IDLE, the simple editor we open in session 2.
+
+::: {.panel-tabset group="os"}
+
+### Windows
+
+1. Download the **Python install manager** from [python.org/downloads/windows](https://www.python.org/downloads/windows/) and install it.
+2. Open **Terminal / PowerShell** or **Command Prompt** from the Start menu and type:
+
+   ```powershell
+   py install 3.14
+   ```
+
+   If it asks whether to add a folder to `PATH` or change other settings,
+   accept.
+3. Check the installation:
+
+   ```powershell
+   py --version
+   ```
+
+   It should print `Python 3.14.` followed by a number.
+
+IDLE is now in the Start menu under **Python 3.14 → IDLE (Python 3.14)**.
+
+If the install manager gives you trouble, the same page still offers the
+classic **Windows installer (64-bit)** for Python 3.14. On its first screen,
+tick **Add python.exe to PATH** before clicking **Install Now**.
+
+### macOS
+
+1. Download the **macOS installer** for the latest Python 3.14 from
+   [python.org/downloads/macos](https://www.python.org/downloads/macos/)
+   and run it, accepting the defaults.
+2. At the end, a Finder window opens the folder **Applications → Python 3.14**.
+   Double-click **Install Certificates.command** there; it lets Python
+   download files from the internet.
+3. Open **Terminal** (in Applications → Utilities) and check the installation:
+
+   ```bash
+   python3 --version
+   ```
+
+   It should print `Python 3.14.` followed by a number.
+
+IDLE is in **Applications → Python 3.14 → IDLE**.
+
+:::
+
+::: {.callout-note title="Already using conda?"}
+If you already work with Anaconda, Miniconda or Miniforge, you can keep it:
+create an environment with `conda create -n ars-pythonica python=3.14` and
+select it in VS Code ([see section 3](#did-it-work)). The instructions in this book assume the
+python.org installation, so details may differ for you.
+:::
+
+## 2. VS Code
+
+[VS Code](https://code.visualstudio.com/) is the editor we use from session 2
+on. It needs the **Python** extension to run Python code.
+
+::: {.panel-tabset group="os"}
+
+### Windows
+
+1. Download the **Windows User Installer** from
+   [code.visualstudio.com/download](https://code.visualstudio.com/download)
+   and run it. Keep **Add to PATH** ticked.
+2. Open VS Code, press **Ctrl+Shift+X** (Extensions), search for **Python**,
+   and install the extension by **Microsoft**.
+3. Search for **Jupyter** and install the extension by **Microsoft**, so that VS Code can open Jupyter notebooks (`.ipynb` files).
+
+### macOS
+
+1. Download the **Mac** version from
+   [code.visualstudio.com/download](https://code.visualstudio.com/download),
+   open the download, and move **Visual Studio Code** into **Applications**.
+2. Open VS Code, press **Cmd+Shift+X** (Extensions), search for **Python**,
+   and install the extension by **Microsoft**.
+3. Search for **Jupyter** and install the extension by **Microsoft**, so that VS Code can open Jupyter notebooks (`.ipynb` files).
+
+:::
+
+::: {.callout-note title="Don't forget about ipykernel"}
+When you create or open an `.ipynb` notebook for the first time and run any cell, VS Code may prompt you to install `ipykernel` - this package is necessary to execute Jupyter notebook code. Accept and install.
+:::
+
+## 3. Did it work? {#did-it-work}
+
+1. Create a local folder for the course, e.g. `ars-pythonica`, and open it in VS Code
+   (**File → Open Folder**).
+2. Create a new file `hello.py` in it and type or paste:
+
+   ```python
+   greeting = 'χαῖρε, κόσμε'
+   print(greeting)
+   ```
+
+3. Save the file and click the **▷** button (Run Python File) in the top right
+   corner. If VS Code asks for an interpreter, choose **Python 3.14**.
+
+::: {.panel-tabset group="os"}
+
+### Windows
+
+The terminal at the bottom should show:
+
+```markdown
+χαῖρε, κόσμε
+```
+
+If VS Code can't find Python, press **Ctrl+Shift+P**, run
+**Python: Select Interpreter**, and choose **Python 3.14**.
+
+### macOS
+
+The terminal at the bottom should show:
+
+```markdown
+χαῖρε, κόσμε
+```
+
+If VS Code can't find Python, press **Cmd+Shift+P**, run
+**Python: Select Interpreter**, and choose **Python 3.14**.
+
+:::
+
+Check the accents and breathings in both the editor and the terminal. If
+something fails, save the error message (copied as text, or a screenshot)
+and bring it along so that we can discuss it.

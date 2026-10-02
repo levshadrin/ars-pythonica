@@ -1,0 +1,48 @@
+# Introduction {.unnumbered}
+
+*Ars Pythonica* offers an introduction to programming in Python aimed at classical philologists who work with Greek and Latin texts and seek to incorporate digital humanities and distant reading methods into their research. No prior programming experience is required. 
+
+By the end, you should be able to read and write code and understand what it does, find and fix errors, be familiar with the fundamentals of Python syntax, apply basic pre-processing, data extraction, and data normalization methods, perform exploratory data analysis, and take first steps in using distant reading tools on your own textual corpora.
+
+::: {.callout-caution title="Work in progress"}
+This course is a **work in progress**: the sessions are being updated with new information and assignments, and some sections may be restructured in the future. Any bug reports or suggestions are [greatly appreciated](mailto:lev.shadrin@uibk.ac.at).
+:::
+
+## How the course works
+
+This book is a supplement to twelve weekly sessions of 90 minutes, plus an optional final hackathon-style session, during which we will aim to create, clean up, and structure your research corpora.
+
+The course is structured as a flipped classroom: you learn the concepts at home via interactive courses, while in the session we do a quick recap, address challenges and issues, and then apply the newly acquired skills together to Greek and Latin texts.
+
+- **At home:** 
+    - in Part I, assignments from [futurecoder](https://futurecoder.io) and [Exercism](https://exercism.org/tracks/python/concepts), up to the checkpoint given in the [schedule](schedule.qmd); 
+    - in Part II, **TBA**.
+- **In the session:** a quick concept check, troubleshooting, hands-on workshop (e.g. installation, IDE setup, Jupyter notebooks, CLI, data extraction, corpus cleanup etc.), debugging, and results review.
+
+Every session is still useful if you didn't manage the home assignments, but it is nevertheless recommended to complete the basic exercises, since coding is a practical skill.
+
+## Using AI
+
+::: {.callout-tip title="General practice"}
+You can use AI to **explain**, not to **code**.
+:::
+
+The aim of this course is not to produce impeccable coding solutions to problems, rather to allow participants to break code and experience **as many errors as possible** through practice and active debugging.
+
+Therefore, the use of AI is allowed on an honor system. To make it practical, feel free to use this tutor prompt or set it as custom instructions if you decide to use AI:
+
+```markdown
+I'm learning Python. Explain concepts and error messages, and ask me guiding questions. Don't give me the solution right away, don't write or fix code for me.
+```
+
+## Acknowledgements
+
+This book is inspired by Olga Alieva's ([locusclassicus @ GitHub](https://github.com/locusclassicus)) course [*Компьютерный анализ текста*](https://locusclassicus.github.io/text_analysis/) (*Computer Text Analysis*), as well as Melanie Walsh's ([melaniewalsh @ GitHub](https://github.com/melaniewalsh)) book [*Introduction to Cultural Analytics & Python*](https://melaniewalsh.github.io/Intro-Cultural-Analytics/) and Patrick J. Burns' ([diyclassics @ GitHub](https://github.com/diyclassics)) work on [*LatinCy*](https://latincy.github.io/latincy-book/). My heartfelt thanks to my first Python mentor Daniil Skorinkin ([danilsko @ GitHub](https://github.com/danilsko)).
+
+---
+
+::: {.small .text-muted}
+*Ars Pythonica* is an informal, self-organised learning initiative by Lev Shadrin. It is not part of any curriculum and carries no ECTS credits.\
+Text © Lev Shadrin, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+Offenlegung gem. § 25 MedienG: Lev Shadrin, Innsbruck.
+:::

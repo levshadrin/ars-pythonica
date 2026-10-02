@@ -1,0 +1,51 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+
+// Body text: the theme's own font stack, with Gentium in front for Greek only
+// (see the "Gentium Greek" faces below). var(--bs-font-sans-serif) holds the
+// theme's stack, so this works for both the light and the dark theme.
+$font-family-base: "Gentium Greek", var(--bs-font-sans-serif);
+$font-family-monospace: "Noto Sans Mono", monospace;
+
+/*-- scss:rules --*/
+
+// Gentium Book 7.000 (SIL, OFL: see fonts/OFL.txt), self-hosted.
+// Paths are relative to the project root; Quarto copies the files next to
+// the compiled CSS (_book/site_libs/bootstrap/styles/fonts/).
+$gentium-faces: (
+  ("GentiumBook-Regular", normal, 400),
+  ("GentiumBook-Italic", italic, 400),
+  ("GentiumBook-Bold", normal, 700),
+  ("GentiumBook-BoldItalic", italic, 700),
+);
+
+@each $file, $style, $weight in $gentium-faces {
+  // Greek letters and combining diacritics only, so that NFD Greek keeps
+  // its accents in the same font as its letters.
+  @font-face {
+    font-family: "Gentium Greek";
+    src: url("styles/fonts/#{$file}.woff2") format("woff2");
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    unicode-range: U+0300-036F, U+0370-03FF, U+1F00-1FFF;
+  }
+
+  // The whole font, for text marked as Latin or Greek.
+  @font-face {
+    font-family: "Gentium Book";
+    src: url("styles/fonts/#{$file}.woff2") format("woff2");
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+  }
+}
+
+// Only the marked element itself; its text inherits the font, while code
+// inside it keeps the monospace font. (:lang() would also match every
+// element inside, including code, and override the code font.)
+[lang|="la"],
+[lang|="grc"] {
+  font-family: "Gentium Book", serif;
+}

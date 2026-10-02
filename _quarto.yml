@@ -1,0 +1,42 @@
+project:
+  type: book
+  render:
+    - "*.qmd"
+    - "part1/*.qmd"
+    - "part2/*.qmd"
+
+book:
+  title: "Ars Pythonica"
+  subtitle: "Introduction to Python for Classical Philologists"
+  author: 
+    - name: "Lev Shadrin" 
+      url: "https://github.com/levshadrin"
+      email: "lev.shadrin@uibk.ac.at"
+      orcid: 0009-0000-9743-9981
+      affiliations:
+        - name: University of Innsbruck
+          department: Classical Philology and Neo-Latin Studies
+          url: https://www.uibk.ac.at/latinistik-graezistik/mitarbeiterinnen/lev-shadrin/
+        - name: SRA Neo-Latin in the Modern World
+          url: https://neolatin.eu/team/lev-shadrin/
+  repo-url: https://github.com/levshadrin/ars-pythonica
+  chapters:
+    - index.qmd
+    - schedule.qmd
+    - setup.qmd
+    - part: "Part I: Fundamentals"
+      chapters:
+        - part1/01-what-is-python.qmd
+    - part: "Part II: Applied DH"
+      chapters:
+        - part2/08-regular-expressions.qmd
+
+format:
+  html:
+    theme:
+      light: [lumen, styles/fonts.scss, styles/light.scss]
+      dark: [darkly, styles/fonts.scss, styles/dark.scss]
+    code-overflow: wrap
+
+execute:
+  freeze: auto

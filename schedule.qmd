@@ -1,0 +1,34 @@
+# Schedule {.unnumbered}
+
+Weekly sessions of 90 minutes. **Before the session** is the home checkpoint to
+reach before we meet: chapters of [futurecoder](https://futurecoder.io/course/#toc) in
+Part I, readings in Part II. Selected
+[Exercism](https://exercism.org/tracks/python) exercises will be added along
+the way.
+
+## Part I: Fundamentals
+
+| Session | Date | Topic | Before the session |
+|---|---|---|---|
+| 1 | *TBA* | What is Python? | Nothing: it's the first session 🎉 Bring a laptop with a web browser. |
+| 2 | *TBA* | Environments; variables and strings | Install Python ([Setup](setup.qmd)); <br> [futurecoder](https://futurecoder.io/course/#toc): *The Shell*, *String Basics*, *Variables* |
+| 3 | *TBA* | Loops and conditions | [futurecoder](https://futurecoder.io/course/#toc): *For Loops*, *If Statements* |
+| 4 | *TBA* | Lists and string methods | [futurecoder](https://futurecoder.io/course/#toc): *Lists* (13 short pages) |
+| 5 | *TBA* | Functions and nested structures | [futurecoder](https://futurecoder.io/course/#toc): *A Bit More About Strings*, *Nested Loops*, *Functions* |
+| 6 | *TBA* | Dictionaries and frequency lists | [futurecoder](https://futurecoder.io/course/#toc): *Boolean Operators*, *Dictionaries*; optional: *Tic Tac Toe Project* |
+| 7 | *TBA* | Files, batch processing, Unicode | *Python for Everybody*, [Chapter 7: Files](https://www.py4e.com/html3/07-files) |
+
+: {.striped .hover}
+
+## Part II: Applied DH
+
+| Session | Date | Topic | Before the session |
+|---|---|---|---|
+| 8 | *TBA* | Regular expressions for corpus cleanup | *TBA* |
+| 9 | *TBA* | XML and TEI | *TBA* |
+| 10 | *TBA* | pandas I: tables and missing data | *TBA* |
+| 11 | *TBA* | pandas II: exploration and plotting | *TBA* |
+| 12 | *TBA* | Distant reading | *TBA* |
+| 13 | *TBA* | Personal projects hackathon | *TBA* |
+
+: {.striped .hover}
