@@ -1,10 +1,97 @@
-# What is Python?
+---
+lightbox: true
+---
 
-## History
+# What is Python?
+What makes Python so appealing, useful, and flexible for scholarly research and textual analysis?\
+Is it the best programming language?\
+Better yet, does it even make sense to study programming in the age of AI?\
+
+## Why code?
+
+We use programming to solve computational problems or perform specific tasks (oftentimes repetitive or routine) by providing a computer with step-by-step instructions.
+
+Communication between humans and computers is defined by I/O that stands for "input/output" and generally covers the broad spectrum of interfaces, peripherals and agents involved in this process, such as human operators, information processing systems, and AI agents.
+
+![](../images/input_output.png)
+
+
+::: {.callout-note title="I/O in different programming languages" collapse="true"} 
+
+This [article](https://www.geeksforgeeks.org/dsa/input-and-output-in-programming/) gives a brief comparison of how different programming languages like C, JS, or Python handle input/output. You may notice that Python doesn't require a standalone library for that -- another testament to its popularity!
+
+:::
+
+
+## *Why* code manually?
+
+Suffice it to say, LLMs are here to stay. The performance of frontier models improves constantly, and they excel at automating routine tasks, drafting boilerplates, and a vast range of generation tasks, such as summarisation, Q&A, or RAG.
+
+The benchmarks below (courtesy of [Christopher Pollin](https://chpollin.github.io/), who talked about AI workflows at [MLDSE 2026 in Graz](https://dhgraz.github.io/dse-ml-2026/)) demonstrate three trends in the current snapshot of frontier LLM models.
+
+**Growing capabilities**
+
+Over the years, frontier LLMs have learnt to handle tasks with more advanced [computational complexity](https://en.wikipedia.org/wiki/Computational_complexity), as demonstrated on this chart prepared by the [METR (Model Evaluation and Threat Research)](https://metr.org/about) nonprofit community, who monitor frontier models performance (@fig-metr-time-horizons-log).
+
+There is a steadily growing trend in task-completion time horizon, and the growth is even steeper on a linear scale (@fig-metr-time-horizons-lin).
+
+::: {.panel-tabset group="os"}
+
+### Log scale
+![Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a logarithmic scale. Based on METR's Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at [metr.org/time-horizons](https://metr.org/time-horizons/), data as of 8 May 2026.](../images/metr_datavis_log.png){#fig-metr-time-horizons-log fig-alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a log scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models."}
+
+### Linear scale
+![Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a linear scale. Based on METR's Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at [metr.org/time-horizons](https://metr.org/time-horizons/), data as of 8 May 2026.](../images/metr_datavis_lin.png){#fig-metr-time-horizons-lin fig-alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a linear scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models."}
+
+:::
+
+**Jagged capabilities**
+
+Performance, however, is uneven. The same models that can work through software tasks lasting many hours still stumble on problems most people solve without effort. These results are often described as *jagged*: excellent at some tasks, surprisingly weak at closely related ones, with no reliable way to tell in advance which is which.
+
+On SimpleBench (@fig-simplebench), a set of trick questions on everyday spatial, temporal and social reasoning, only the three best models have overtaken the average human baseline of 83.7%, and none comes close to the best human score of 95.4%.
+
+The gap is wider still on ARC-AGI-3 (@fig-arc-agi), whose game-like environments are designed to be easy for humans to pick up: most systems score below 10%, and only a few approach human level, with a dedicated harness and at a cost of thousands of dollars. For us, this unevenness is the practical point: an AI assistant may solve one coding problem flawlessly and fail at the next without warning, so we need to be able to read, test and fix its code ourselves.
+
+
+::: {.callout-note title="Jagged technology frontier"}
+
+The term "jagged" was first introduced in [@dellacqua2023navigating], who define the concept of a "jagged technology frontier" to describe the uneven impact of GPT-4 models.
+
+:::
+
+::: {.panel-tabset}
+
+### Everyday reasoning
+![Top ten language models on SimpleBench, a multiple-choice benchmark of over 200 questions on spatio-temporal reasoning, social intelligence and trick questions that people with ordinary high-school knowledge can answer. Scores are averaged over five runs (AVG\@5). Screenshot of the leaderboard at [simple-bench.com](https://simple-bench.com/), as of 2 October 2026.](../images/simple_bench_datavis.png){#fig-simplebench fig-alt="Leaderboard of the ten highest-scoring language models on SimpleBench, showing each model's average score as a percentage."}
+
+### Unfamiliar tasks (AGI)
+![Scores of AI systems on ARC-AGI-3, an interactive reasoning benchmark of game-like environments that agents must learn from experience; a score of 100% means beating every game as efficiently as humans. Scores are plotted against cost per task, represented on a logarithmic scale; dashed lines connect the same model at different reasoning levels. Screenshot of the leaderboard at [arcprize.org/leaderboard](https://arcprize.org/leaderboard), as of 3 October 2026.](../images/arc-prize-leaderboard.png){#fig-arc-agi fig-alt="Scatter plot of ARC-AGI-3 scores from 0 to 100% against cost from $1 to $100K on a log scale. Most models score below 10%; GPT-6 Astra and GPT-6.1 Sol reach 80–100% with the Provider Adapter harness, at costs of several thousand dollars or more."}
+
+:::
+
+**Asymmetric amplification**
+
+In his blogpost [@pollin2026asymmetric], Christopher Pollin argues that frontier models do not so much automate research as amplify computer-based research work, and that they do so unevenly:
+
+> "Those who can judge quality, who understand their data and their domain, and who have access to frontier models and the infrastructure behind them, gain disproportionate leverage. Those who cannot are left behind." 
+
+A model multiplies the skills its user already brings: where there are none, there is little to multiply. And since a model produces plausible text without checking it, someone still has to verify the result, or, as Pollin puts it, "without Computer Literacy, **the first error message is a dead end**." He describes three layers of competence that build on each other: *computer literacy*, *computational thinking*, and *informed vibe coding*, that is, working critically with a model on the basis of the first two. 
+
+We will focus on the first two layers, so that the third becomes useful, controlled, and productive.
+
+::: {layout-ncol=2}
+![](../images/vibe_coding.jpg){.nolightbox}
+
+![](../images/vibe_debugging.jpg){.nolightbox}
+:::
+
+## *Why* Python?
+
 
 *Coming soon.*
 
-## Before this session
+## History
 
 *Coming soon.*
 

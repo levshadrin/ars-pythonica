@@ -1,5 +1,6 @@
 project:
   type: book
+  execute-dir: project
   render:
     - "*.qmd"
     - "part1/*.qmd"
@@ -41,6 +42,9 @@ book:
         - part2/11-pandas-exploration-and-plotting.qmd
         - part2/12-distant-reading.qmd
         - part2/13-personal-projects-hackathon.qmd
+    # - references.qmd <-- gitignored as well -->
+
+bibliography: references.bib
 
 format:
   html:
@@ -48,6 +52,7 @@ format:
       light: [lumen, styles/fonts.scss, styles/light.scss]
       dark: [darkly, styles/fonts.scss, styles/dark.scss]
     code-overflow: wrap
+    citation-location: margin
 
 execute:
   freeze: auto

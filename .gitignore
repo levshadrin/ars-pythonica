@@ -13,3 +13,4 @@ _planning/
 **/*.quarto_ipynb
 CLAUDE.md
 /.quarto/
+references.qmd

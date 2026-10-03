@@ -43,6 +43,6 @@ This book is inspired by Olga Alieva's ([locusclassicus @ GitHub](https://github
 
 ::: {.small .text-muted}
 *Ars Pythonica* is an informal, self-organised learning initiative by Lev Shadrin. It is not part of any curriculum and carries no ECTS credits.\
-Text © Lev Shadrin, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+© Lev Shadrin, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)\
 Offenlegung gem. § 25 MedienG: Lev Shadrin, Innsbruck.
 :::
