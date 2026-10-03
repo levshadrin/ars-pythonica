@@ -34,7 +34,7 @@
     "href": "index.html#acknowledgements",
     "title": "Ars Pythonica",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nThis book is inspired by Olga Alieva’s (locusclassicus @ GitHub) course Компьютерный анализ текста (Computer Text Analysis), as well as Melanie Walsh’s (melaniewalsh @ GitHub) book Introduction to Cultural Analytics & Python and Patrick J. Burns’ (diyclassics @ GitHub) work on LatinCy. My heartfelt thanks to my first Python mentor Daniil Skorinkin (danilsko @ GitHub).\n\n\nArs Pythonica is an informal, self-organised learning initiative by Lev Shadrin. It is not part of any curriculum and carries no ECTS credits.\nText © Lev Shadrin, CC BY-SA 4.0 Offenlegung gem. § 25 MedienG: Lev Shadrin, Innsbruck.",
+    "text": "Acknowledgements\nThis book is inspired by Olga Alieva’s (locusclassicus @ GitHub) course Компьютерный анализ текста (Computer Text Analysis), as well as Melanie Walsh’s (melaniewalsh @ GitHub) book Introduction to Cultural Analytics & Python and Patrick J. Burns’ (diyclassics @ GitHub) work on LatinCy. My heartfelt thanks to my first Python mentor Daniil Skorinkin (danilsko @ GitHub).\n\n\nArs Pythonica is an informal, self-organised learning initiative by Lev Shadrin. It is not part of any curriculum and carries no ECTS credits.\n© Lev Shadrin, CC BY-SA 4.0\nOffenlegung gem. § 25 MedienG: Lev Shadrin, Innsbruck.",
     "crumbs": [
       "Introduction"
     ]
@@ -114,18 +114,51 @@
     "href": "part1/01-what-is-python.html",
     "title": "1  What is Python?",
     "section": "",
-    "text": "1.1 History\nComing soon.",
+    "text": "1.1 Why code?\nWhat makes Python so appealing, useful, and flexible for scholarly research and textual analysis?\nIs it the best programming language?\nBetter yet, does it even make sense to study programming in the age of AI?\nWe use programming to solve computational problems or perform specific tasks (oftentimes repetitive or routine) by providing a computer with step-by-step instructions.\nCommunication between humans and computers is defined by I/O that stands for “input/output” and generally covers the broad spectrum of interfaces, peripherals and agents involved in this process, such as human operators, information processing systems, and AI agents.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
     ]
   },
   {
-    "objectID": "part1/01-what-is-python.html#before-this-session",
-    "href": "part1/01-what-is-python.html#before-this-session",
+    "objectID": "part1/01-what-is-python.html#why-code",
+    "href": "part1/01-what-is-python.html#why-code",
     "title": "1  What is Python?",
-    "section": "1.2 Before this session",
-    "text": "1.2 Before this session\nComing soon.",
+    "section": "",
+    "text": "NoteI/O in different programming languages\n\n\n\n\n\nThis article gives a brief comparison of how different programming languages like C, JS, or Python handle input/output. You may notice that Python doesn’t require a standalone library for that – another testament to its popularity!",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#why-code-manually",
+    "href": "part1/01-what-is-python.html#why-code-manually",
+    "title": "1  What is Python?",
+    "section": "1.2 Why code manually?",
+    "text": "1.2 Why code manually?\nSuffice it to say, LLMs are here to stay. The performance of frontier models improves constantly, and they excel at automating routine tasks, drafting boilerplates, and a vast range of generation tasks, such as summarisation, Q&A, or RAG.\nThe benchmarks below (courtesy of Christopher Pollin, who talked about AI workflows at MLDSE 2026 in Graz) demonstrate three trends in the current snapshot of frontier LLM models.\nGrowing capabilities\nOver the years, frontier LLMs have learnt to handle tasks with more advanced computational complexity, as demonstrated on this chart prepared by the METR (Model Evaluation and Threat Research) nonprofit community, who monitor frontier models performance (Figure 1.1).\nThere is a steadily growing trend in task-completion time horizon, and the growth is even steeper on a linear scale (Figure 1.2).\n\nLog scaleLinear scale\n\n\n\n\n\n\n\n\nFigure 1.1: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a logarithmic scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at metr.org/time-horizons, data as of 8 May 2026.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1.2: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a linear scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at metr.org/time-horizons, data as of 8 May 2026.\n\n\n\n\n\n\nJagged capabilities\nPerformance, however, is uneven. The same models that can work through software tasks lasting many hours still stumble on problems most people solve without effort. These results are often described as jagged: excellent at some tasks, surprisingly weak at closely related ones, with no reliable way to tell in advance which is which.\nOn SimpleBench (Figure 1.3), a set of trick questions on everyday spatial, temporal and social reasoning, only the three best models have overtaken the average human baseline of 83.7%, and none comes close to the best human score of 95.4%.\nThe gap is wider still on ARC-AGI-3 (Figure 1.4), whose game-like environments are designed to be easy for humans to pick up: most systems score below 10%, and only a few approach human level, with a dedicated harness and at a cost of thousands of dollars. For us, this unevenness is the practical point: an AI assistant may solve one coding problem flawlessly and fail at the next without warning, so we need to be able to read, test and fix its code ourselves.\n\n\n\n\n\n\nNoteJagged technology frontier\n\n\n\nThe term “jagged” was first introduced in (Dell’Acqua et al. 2023), who define the concept of a “jagged technology frontier” to describe the uneven impact of GPT-4 models.\n\n\n\nDell’Acqua, Fabrizio, Edward McFowland Iii, Ethan R. Mollick, et al. 2023. “Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality.” Pre-published. https://doi.org/10.2139/ssrn.4573321.\n\nEveryday reasoningUnfamiliar tasks (AGI)\n\n\n\n\n\n\n\n\nFigure 1.3: Top ten language models on SimpleBench, a multiple-choice benchmark of over 200 questions on spatio-temporal reasoning, social intelligence and trick questions that people with ordinary high-school knowledge can answer. Scores are averaged over five runs (AVG@5). Screenshot of the leaderboard at simple-bench.com, as of 2 October 2026.\n\n\n\n\n\n\n\n\n\n\n\nFigure 1.4: Scores of AI systems on ARC-AGI-3, an interactive reasoning benchmark of game-like environments that agents must learn from experience; a score of 100% means beating every game as efficiently as humans. Scores are plotted against cost per task, represented on a logarithmic scale; dashed lines connect the same model at different reasoning levels. Screenshot of the leaderboard at arcprize.org/leaderboard, as of 3 October 2026.\n\n\n\n\n\n\nAsymmetric amplification\nIn his blogpost (Pollin 2026), Christopher Pollin argues that frontier models do not so much automate research as amplify computer-based research work, and that they do so unevenly:\n\nPollin, Christopher. 2026. “Asymmetric Amplification. Why AI Does Not Automate Research – But Disruptively Amplifies Computer-Based Research Work.” Digital Humanities Craft; Digital Humanities Craft, February 9. https://dhcraft.org/excellence/blog/Asymmetric-Amplification/.\n\n“Those who can judge quality, who understand their data and their domain, and who have access to frontier models and the infrastructure behind them, gain disproportionate leverage. Those who cannot are left behind.”\n\nA model multiplies the skills its user already brings: where there are none, there is little to multiply. And since a model produces plausible text without checking it, someone still has to verify the result, or, as Pollin puts it, “without Computer Literacy, the first error message is a dead end.” He describes three layers of competence that build on each other: computer literacy, computational thinking, and informed vibe coding, that is, working critically with a model on the basis of the first two.\nWe will focus on the first two layers, so that the third becomes useful, controlled, and productive.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#why-python",
+    "href": "part1/01-what-is-python.html#why-python",
+    "title": "1  What is Python?",
+    "section": "1.3 Why Python?",
+    "text": "1.3 Why Python?\nComing soon.",
+    "crumbs": [
+      "Part I: Fundamentals",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
+    ]
+  },
+  {
+    "objectID": "part1/01-what-is-python.html#history",
+    "href": "part1/01-what-is-python.html#history",
+    "title": "1  What is Python?",
+    "section": "1.4 History",
+    "text": "1.4 History\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
@@ -135,8 +168,8 @@
     "objectID": "part1/01-what-is-python.html#concept-check",
     "href": "part1/01-what-is-python.html#concept-check",
     "title": "1  What is Python?",
-    "section": "1.3 Concept check",
-    "text": "1.3 Concept check\nComing soon.",
+    "section": "1.5 Concept check",
+    "text": "1.5 Concept check\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
@@ -146,8 +179,8 @@
     "objectID": "part1/01-what-is-python.html#lab",
     "href": "part1/01-what-is-python.html#lab",
     "title": "1  What is Python?",
-    "section": "1.4 Lab",
-    "text": "1.4 Lab\nComing soon.",
+    "section": "1.6 Lab",
+    "text": "1.6 Lab\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
@@ -157,8 +190,8 @@
     "objectID": "part1/01-what-is-python.html#take-home-extension",
     "href": "part1/01-what-is-python.html#take-home-extension",
     "title": "1  What is Python?",
-    "section": "1.5 Take-home extension",
-    "text": "1.5 Take-home extension\nComing soon.",
+    "section": "1.7 Take-home extension",
+    "text": "1.7 Take-home extension\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"
@@ -168,8 +201,8 @@
     "objectID": "part1/01-what-is-python.html#further-reading",
     "href": "part1/01-what-is-python.html#further-reading",
     "title": "1  What is Python?",
-    "section": "1.6 Further reading",
-    "text": "1.6 Further reading\nComing soon.",
+    "section": "1.8 Further reading",
+    "text": "1.8 Further reading\nComing soon.",
     "crumbs": [
       "Part I: Fundamentals",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Python?</span>"

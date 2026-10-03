@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,6 +71,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-bc6a12d828405b7e4911f4a45df2585c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-38597bd99ba9fcf6e953a1d3ee8e227d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -411,17 +433,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#history" id="toc-history" class="nav-link active" data-scroll-target="#history"><span class="header-section-number">1.1</span> History</a></li>
-  <li><a href="#before-this-session" id="toc-before-this-session" class="nav-link" data-scroll-target="#before-this-session"><span class="header-section-number">1.2</span> Before this session</a></li>
-  <li><a href="#concept-check" id="toc-concept-check" class="nav-link" data-scroll-target="#concept-check"><span class="header-section-number">1.3</span> Concept check</a></li>
-  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">1.4</span> Lab</a></li>
-  <li><a href="#take-home-extension" id="toc-take-home-extension" class="nav-link" data-scroll-target="#take-home-extension"><span class="header-section-number">1.5</span> Take-home extension</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">1.6</span> Further reading</a></li>
+  <li><a href="#why-code" id="toc-why-code" class="nav-link active" data-scroll-target="#why-code"><span class="header-section-number">1.1</span> Why code?</a></li>
+  <li><a href="#why-code-manually" id="toc-why-code-manually" class="nav-link" data-scroll-target="#why-code-manually"><span class="header-section-number">1.2</span> <em>Why</em> code manually?</a></li>
+  <li><a href="#why-python" id="toc-why-python" class="nav-link" data-scroll-target="#why-python"><span class="header-section-number">1.3</span> <em>Why</em> Python?</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history"><span class="header-section-number">1.4</span> History</a></li>
+  <li><a href="#concept-check" id="toc-concept-check" class="nav-link" data-scroll-target="#concept-check"><span class="header-section-number">1.5</span> Concept check</a></li>
+  <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab"><span class="header-section-number">1.6</span> Lab</a></li>
+  <li><a href="#take-home-extension" id="toc-take-home-extension" class="nav-link" data-scroll-target="#take-home-extension"><span class="header-section-number">1.7</span> Take-home extension</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">1.8</span> Further reading</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../part1/01-what-is-python.html">Part I: Fundamentals</a></li><li class="breadcrumb-item"><a href="../part1/01-what-is-python.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What is Python?</span></a></li></ol></nav>
@@ -443,29 +467,160 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="history" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="history"><span class="header-section-number">1.1</span> History</h2>
+<p>What makes Python so appealing, useful, and flexible for scholarly research and textual analysis?<br>
+Is it the best programming language?<br>
+Better yet, does it even make sense to study programming in the age of AI?<br>
+</p>
+<section id="why-code" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="why-code"><span class="header-section-number">1.1</span> Why code?</h2>
+<p>We use programming to solve computational problems or perform specific tasks (oftentimes repetitive or routine) by providing a computer with step-by-step instructions.</p>
+<p>Communication between humans and computers is defined by I/O that stands for “input/output” and generally covers the broad spectrum of interfaces, peripherals and agents involved in this process, such as human operators, information processing systems, and AI agents.</p>
+<p><a href="../images/input_output.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/input_output.png" class="img-fluid"></a></p>
+<div class="callout callout-style-default callout-note callout-titled" title="I/O in different programming languages">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>I/O in different programming languages
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This <a href="https://www.geeksforgeeks.org/dsa/input-and-output-in-programming/">article</a> gives a brief comparison of how different programming languages like C, JS, or Python handle input/output. You may notice that Python doesn’t require a standalone library for that – another testament to its popularity!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="why-code-manually" class="level2 page-columns page-full" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="why-code-manually"><span class="header-section-number">1.2</span> <em>Why</em> code manually?</h2>
+<p>Suffice it to say, LLMs are here to stay. The performance of frontier models improves constantly, and they excel at automating routine tasks, drafting boilerplates, and a vast range of generation tasks, such as summarisation, Q&amp;A, or RAG.</p>
+<p>The benchmarks below (courtesy of <a href="https://chpollin.github.io/">Christopher Pollin</a>, who talked about AI workflows at <a href="https://dhgraz.github.io/dse-ml-2026/">MLDSE 2026 in Graz</a>) demonstrate three trends in the current snapshot of frontier LLM models.</p>
+<p><strong>Growing capabilities</strong></p>
+<p>Over the years, frontier LLMs have learnt to handle tasks with more advanced <a href="https://en.wikipedia.org/wiki/Computational_complexity">computational complexity</a>, as demonstrated on this chart prepared by the <a href="https://metr.org/about">METR (Model Evaluation and Threat Research)</a> nonprofit community, who monitor frontier models performance (<a href="#fig-metr-time-horizons-log" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>).</p>
+<p>There is a steadily growing trend in task-completion time horizon, and the growth is even steeper on a linear scale (<a href="#fig-metr-time-horizons-lin" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="os">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Log scale</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Linear scale</a></li></ul>
+<div class="tab-content" data-group="os">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="fig-metr-time-horizons-log" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a log scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-metr-time-horizons-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/metr_datavis_log.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;1.1: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a logarithmic scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at metr.org/time-horizons, data as of 8 May 2026."><img src="../images/metr_datavis_log.png" class="img-fluid figure-img" alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a log scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metr-time-horizons-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a logarithmic scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at <a href="https://metr.org/time-horizons/">metr.org/time-horizons</a>, data as of 8 May 2026.
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="fig-metr-time-horizons-lin" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a linear scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-metr-time-horizons-lin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/metr_datavis_lin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;1.2: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a linear scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at metr.org/time-horizons, data as of 8 May 2026."><img src="../images/metr_datavis_lin.png" class="img-fluid figure-img" alt="Scatter plot of AI models by release date from 2019 to 2026 against the length of task they complete with 50% success, on a linear scale. Horizons rise from a few seconds for GPT-2 to over 16 hours for the most recent models."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-metr-time-horizons-lin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Task-completion time horizons of frontier AI models: the length of task (measured by how long it takes a human expert) that a model is predicted to complete with 50% success, represented on a linear scale. Based on METR’s Time Horizon 1.1 suite of software engineering, machine learning and cybersecurity tasks. Screenshot of the interactive chart at <a href="https://metr.org/time-horizons/">metr.org/time-horizons</a>, data as of 8 May 2026.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Jagged capabilities</strong></p>
+<p>Performance, however, is uneven. The same models that can work through software tasks lasting many hours still stumble on problems most people solve without effort. These results are often described as <em>jagged</em>: excellent at some tasks, surprisingly weak at closely related ones, with no reliable way to tell in advance which is which.</p>
+<p>On SimpleBench (<a href="#fig-simplebench" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>), a set of trick questions on everyday spatial, temporal and social reasoning, only the three best models have overtaken the average human baseline of 83.7%, and none comes close to the best human score of 95.4%.</p>
+<p>The gap is wider still on ARC-AGI-3 (<a href="#fig-arc-agi" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>), whose game-like environments are designed to be easy for humans to pick up: most systems score below 10%, and only a few approach human level, with a dedicated harness and at a cost of thousands of dollars. For us, this unevenness is the practical point: an AI assistant may solve one coding problem flawlessly and fail at the next without warning, so we need to be able to read, test and fix its code ourselves.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Jagged technology frontier">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Jagged technology frontier
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The term “jagged” was first introduced in <span class="citation" data-cites="dellacqua2023navigating">(<a href="#ref-dellacqua2023navigating" role="doc-biblioref">Dell’Acqua et al. 2023</a>)</span>, who define the concept of a “jagged technology frontier” to describe the uneven impact of GPT-4 models.</p>
+</div>
+</div>
+<div class="no-row-height column-margin column-container"><div id="ref-dellacqua2023navigating" class="csl-entry" role="listitem">
+Dell’Acqua, Fabrizio, Edward McFowland Iii, Ethan R. Mollick, et al. 2023. <span>“Navigating the <span>Jagged Technological Frontier</span>: <span>Field Experimental Evidence</span> of the <span>Effects</span> of <span>Artificial Intelligence</span> on <span>Knowledge Worker Productivity</span> and <span>Quality</span>.”</span> Pre-published. <a href="https://doi.org/10.2139/ssrn.4573321">https://doi.org/10.2139/ssrn.4573321</a>.
+</div></div><div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Everyday reasoning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Unfamiliar tasks (AGI)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="fig-simplebench" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Leaderboard of the ten highest-scoring language models on SimpleBench, showing each model's average score as a percentage.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-simplebench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/simple_bench_datavis.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;1.3: Top ten language models on SimpleBench, a multiple-choice benchmark of over 200 questions on spatio-temporal reasoning, social intelligence and trick questions that people with ordinary high-school knowledge can answer. Scores are averaged over five runs (AVG@5). Screenshot of the leaderboard at simple-bench.com, as of 2 October 2026."><img src="../images/simple_bench_datavis.png" class="img-fluid figure-img" alt="Leaderboard of the ten highest-scoring language models on SimpleBench, showing each model's average score as a percentage."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-simplebench-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: Top ten language models on SimpleBench, a multiple-choice benchmark of over 200 questions on spatio-temporal reasoning, social intelligence and trick questions that people with ordinary high-school knowledge can answer. Scores are averaged over five runs (AVG@5). Screenshot of the leaderboard at <a href="https://simple-bench.com/">simple-bench.com</a>, as of 2 October 2026.
+</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="fig-arc-agi" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Scatter plot of ARC-AGI-3 scores from 0 to 100% against cost from $1 to $100K on a log scale. Most models score below 10%; GPT-6 Astra and GPT-6.1 Sol reach 80–100% with the Provider Adapter harness, at costs of several thousand dollars or more.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arc-agi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/arc-prize-leaderboard.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;1.4: Scores of AI systems on ARC-AGI-3, an interactive reasoning benchmark of game-like environments that agents must learn from experience; a score of 100% means beating every game as efficiently as humans. Scores are plotted against cost per task, represented on a logarithmic scale; dashed lines connect the same model at different reasoning levels. Screenshot of the leaderboard at arcprize.org/leaderboard, as of 3 October 2026."><img src="../images/arc-prize-leaderboard.png" class="img-fluid figure-img" alt="Scatter plot of ARC-AGI-3 scores from 0 to 100% against cost from $1 to $100K on a log scale. Most models score below 10%; GPT-6 Astra and GPT-6.1 Sol reach 80–100% with the Provider Adapter harness, at costs of several thousand dollars or more."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arc-agi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Scores of AI systems on ARC-AGI-3, an interactive reasoning benchmark of game-like environments that agents must learn from experience; a score of 100% means beating every game as efficiently as humans. Scores are plotted against cost per task, represented on a logarithmic scale; dashed lines connect the same model at different reasoning levels. Screenshot of the leaderboard at <a href="https://arcprize.org/leaderboard">arcprize.org/leaderboard</a>, as of 3 October 2026.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Asymmetric amplification</strong></p>
+<p>In his blogpost <span class="citation" data-cites="pollin2026asymmetric">(<a href="#ref-pollin2026asymmetric" role="doc-biblioref">Pollin 2026</a>)</span>, Christopher Pollin argues that frontier models do not so much automate research as amplify computer-based research work, and that they do so unevenly:</p>
+<div class="no-row-height column-margin column-container"><div id="ref-pollin2026asymmetric" class="csl-entry" role="listitem">
+Pollin, Christopher. 2026. <span>“Asymmetric <span>Amplification</span>. <span>Why AI Does Not Automate Research</span> – <span>But Disruptively Amplifies Computer-Based Research Work</span>.”</span> Digital Humanities Craft; Digital Humanities Craft, February 9. <a href="https://dhcraft.org/excellence/blog/Asymmetric-Amplification/">https://dhcraft.org/excellence/blog/Asymmetric-Amplification/</a>.
+</div></div><blockquote class="blockquote">
+<p>“Those who can judge quality, who understand their data and their domain, and who have access to frontier models and the infrastructure behind them, gain disproportionate leverage. Those who cannot are left behind.”</p>
+</blockquote>
+<p>A model multiplies the skills its user already brings: where there are none, there is little to multiply. And since a model produces plausible text without checking it, someone still has to verify the result, or, as Pollin puts it, “without Computer Literacy, <strong>the first error message is a dead end</strong>.” He describes three layers of competence that build on each other: <em>computer literacy</em>, <em>computational thinking</em>, and <em>informed vibe coding</em>, that is, working critically with a model on the basis of the first two.</p>
+<p>We will focus on the first two layers, so that the third becomes useful, controlled, and productive.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../images/vibe_coding.jpg" class="nolightbox img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../images/vibe_debugging.jpg" class="nolightbox img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="why-python" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="why-python"><span class="header-section-number">1.3</span> <em>Why</em> Python?</h2>
 <p><em>Coming soon.</em></p>
 </section>
-<section id="before-this-session" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="before-this-session"><span class="header-section-number">1.2</span> Before this session</h2>
+<section id="history" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="history"><span class="header-section-number">1.4</span> History</h2>
 <p><em>Coming soon.</em></p>
 </section>
-<section id="concept-check" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="concept-check"><span class="header-section-number">1.3</span> Concept check</h2>
+<section id="concept-check" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="concept-check"><span class="header-section-number">1.5</span> Concept check</h2>
 <p><em>Coming soon.</em></p>
 </section>
-<section id="lab" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="lab"><span class="header-section-number">1.4</span> Lab</h2>
+<section id="lab" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="lab"><span class="header-section-number">1.6</span> Lab</h2>
 <p><em>Coming soon.</em></p>
 </section>
-<section id="take-home-extension" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="take-home-extension"><span class="header-section-number">1.5</span> Take-home extension</h2>
+<section id="take-home-extension" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="take-home-extension"><span class="header-section-number">1.7</span> Take-home extension</h2>
 <p><em>Coming soon.</em></p>
 </section>
-<section id="further-reading" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">1.6</span> Further reading</h2>
+<section id="further-reading" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">1.8</span> Further reading</h2>
 <p><em>Coming soon.</em></p>
+
 
 
 </section>
@@ -897,6 +1052,38 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
