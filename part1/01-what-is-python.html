@@ -673,8 +673,31 @@ Pollin, Christopher. 2026. <span>“Asymmetric <span>Amplification</span>. <span
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="ae0c52a0" class="cell" data-execution_count="1">
+<div id="dc15f907" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> this</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -694,26 +717,26 @@ Pollin, Christopher. 2026. <span>“Asymmetric <span>Amplification</span>. <span
 <div class="callout-body-container callout-body">
 <p>There are plenty programming languages, whose syntax is written using other natural languages besides English. In fact, nothing prevents you from naming a Python variable in Greek or Latin – just keep in mind that this code will be very difficult to evaluate for anyone else!</p>
 <p>One example of a non-English programming language is <a href="https://metacpan.org/release/DCONWAY/Lingua-Romana-Perligata-0.50/view/lib/Lingua/Romana/Perligata.pm">Lingua::Romana::Perligata</a>, a a Perl 5 module that can be used to write functional code using a syntax based on classical Latin.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode perl code-with-copy"><code class="sourceCode perl"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#! /usr/local/bin/perl -w</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use</span> <span class="fu">Lingua::Romana</span>::<span class="fu">Perligata</span>;</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>nexto stringum reperimentum da.     <span class="co"># $next = pos $string;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>nextum stringo reperimento da.      <span class="co"># pos $string = $next;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>inserto stringum tum unum tum duo excerpementum da.</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># $insert = substr($string,1,2);</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>insertum stringo unum tum duo excerpemento da.</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># substr($string,1,2) = $insert;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>clavis hashus nominamentum da.      <span class="co"># @keys = keys %hash;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>clava hashibus nominamento da.      <span class="co"># keys %hash = @keys;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode perl code-with-copy"><code class="sourceCode perl"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#! /usr/local/bin/perl -w</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use</span> <span class="fu">Lingua::Romana</span>::<span class="fu">Perligata</span>;</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>nexto stringum reperimentum da.     <span class="co"># $next = pos $string;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>nextum stringo reperimento da.      <span class="co"># pos $string = $next;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>inserto stringum tum unum tum duo excerpementum da.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># $insert = substr($string,1,2);</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>insertum stringo unum tum duo excerpemento da.</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># substr($string,1,2) = $insert;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>clavis hashus nominamentum da.      <span class="co"># @keys = keys %hash;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>clava hashibus nominamento da.      <span class="co"># keys %hash = @keys;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
 <p><strong>High-level language</strong></p>
 <p>Programming languages differ in how close they stay to the machine. <em>Low-level</em> languages, such as machine code, assembly and, to a degree, C, work in terms of the processor: memory addresses, bytes, registers. To count the words in a line of Virgil in C, you would reserve memory for the text, walk through it character by character, and decide yourself what counts as a space. <em>High-level</em> languages like Python hide these details behind abstractions such as <em>strings</em>, <em>lists</em> and <em>dictionaries</em>, so that you describe <em>what</em> you want rather than <em>how</em> the hardware should do it.</p>
 <p>An editorial analogy: a low-level language is a diplomatic transcription, recording every abbreviation and letterform; a high-level language is the normalized reading text, which lets you concentrate on the meaning. Python also handles Unicode out of the box, so polytonic Greek needs no special treatment:</p>
-<div id="799c8970" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">'Μῆνιν ἄειδε θεά'</span>.split()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="26">
+<div id="c76dd2ec" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">'Μῆνιν ἄειδε θεά'</span>.split()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>['Μῆνιν', 'ἄειδε', 'θεά']</code></pre>
 </div>
 </div>
