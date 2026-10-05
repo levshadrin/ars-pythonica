@@ -88,12 +88,103 @@ We will focus on the first two layers, so that the third becomes useful, control
 
 ## *Why* Python?
 
+**Beginner friendly**
 
-*Coming soon.*
+As we will soon see, Python reads much like a natural, predicate-focused language with a small, strict grammar. Its vocabulary divides the way a linguist would expect: 
+
+* there is a closed class of 35 *keywords*: logical operators and function words such as `and`, `or`, `not`, `if`, `for`, `in` and `return`, which you can neither redefine nor add to; 
+* there is an open class of *names* that you coin yourself, such as `verse`, `lemma` or `word_count`;
+* pre-defined functions behave like imperative verbs: `print()` displays what is to be printed as its argument, `open()` opens the file from your computer; 
+* methods attach a verb to its subject, as in `'ΜΗΝΙΝ'.lower()`
+
+```python
+verse = 'arma virumque cano Troiae qui primus ab oris'
+words = verse.split()
+print(len(words))
+```
+
+Even without knowing any Python, you can probably guess that these three lines split a line of Virgil into words, count them, and print `8`. This is why Python is often called "executable pseudocode": the informal, half-English notation programmers use to sketch an algorithm is often not far from valid Python.
+
+Learning the rules of Python is akin to learning a new languages - once you memorize basic syntax and some crucial 'keywords', you'll be able to communicate. Eloquence comes with learning formatting style conventions and abstract patterns to use them as building blocks when designing your programs.
+
+::: {.callout-tip title="PEP8 in your step"}
+There's a difference between grammatically correct English and eloquent, bedazzled, stylistically sound English. In the same vein, Python's style guide called [PEP 8](https://peps.python.org/pep-0008/) offers a trove of suggestions on improving your coding practices.
+
+It rests on the observation that "code is read much more often than it is written", and the language's guiding aphorisms, [*The Zen of Python*](https://peps.python.org/pep-0020/), state it plainly: "Readability counts."
+
+:::
+
+::: {.callout-tip title="Zen of Python" collapse="true"}
+```{python}
+import this
+```
+
+:::
+
+Like any grammar, Python's is unforgiving: a missing quotation mark or bracket is a `SyntaxError`. Unlike a reviewer, however, the interpreter tells you exactly where it stumbled, and learning to read these messages is a skill we will practice regularly throughout the course.
+
+::: {.callout-note title="Coding in Latin? What?" collapse="true"}
+There are plenty programming languages, whose syntax is written using other natural languages besides English. In fact, nothing prevents you from naming a Python variable in Greek or Latin -- just keep in mind that this code will be very difficult to evaluate for anyone else!
+
+One example of a non-English programming language is [Lingua::Romana::Perligata](https://metacpan.org/release/DCONWAY/Lingua-Romana-Perligata-0.50/view/lib/Lingua/Romana/Perligata.pm), a a Perl 5 module that can be used to write functional code using a syntax based on classical Latin.
+
+```perl
+#! /usr/local/bin/perl -w
+use Lingua::Romana::Perligata;
+
+nexto stringum reperimentum da.     # $next = pos $string;
+nextum stringo reperimento da.      # pos $string = $next;
+inserto stringum tum unum tum duo excerpementum da.
+                                    # $insert = substr($string,1,2);
+insertum stringo unum tum duo excerpemento da.
+                                    # substr($string,1,2) = $insert;
+clavis hashus nominamentum da.      # @keys = keys %hash;
+clava hashibus nominamento da.      # keys %hash = @keys;
+```
+
+:::
+
+**High-level language**
+
+Programming languages differ in how close they stay to the machine. *Low-level* languages, such as machine code, assembly and, to a degree, C, work in terms of the processor: memory addresses, bytes, registers. To count the words in a line of Virgil in C, you would reserve memory for the text, walk through it character by character, and decide yourself what counts as a space. *High-level* languages like Python hide these details behind abstractions such as *strings*, *lists* and *dictionaries*, so that you describe *what* you want rather than *how* the hardware should do it.
+
+An editorial analogy: a low-level language is a diplomatic transcription, recording every abbreviation and letterform; a high-level language is the normalized reading text, which lets you concentrate on the meaning. Python also handles Unicode out of the box, so polytonic Greek needs no special treatment: 
+
+```{python}
+'Μῆνιν ἄειδε θεά'.split()
+```
+
+The price is speed: Python runs more slowly than C. For research, however, the scarce resource is usually our time, not the computer's.
+
+**Easily accessible packages**
+
+Python comes with "batteries included": its standard library already covers much of what this course needs, from `re` (regular expressions) and `unicodedata` (normalising Greek diacritics) to `xml.etree` (TEI files) and `csv` (tables). Beyond that, the [Python Package Index](https://pypi.org/) lists over 900,000 projects (as of October 2026), each installable with a single command.
+
+Several of them were built for our source languages:
+
+- [CLTK](https://cltk.org/), the Classical Language Toolkit: natural language processing for pre-modern languages, including Latin and Ancient Greek;
+- [LatinCy](https://huggingface.co/latincy) and [odyCy](https://github.com/centre-for-humanities-computing/odyCy): pipelines for the widely used NLP library spaCy, for Latin and Ancient Greek respectively;
+- [Stanza](https://stanfordnlp.github.io/stanza/): Stanford's NLP library, with models for Latin and Ancient Greek.
 
 ## History
 
-*Coming soon.*
+Python began as a holiday project. In December 1989, Guido van Rossum, a programmer at the Centrum Wiskunde & Informatica (CWI) in Amsterdam, was looking for something to keep him busy over Christmas. He had helped build ABC, a teaching language developed at CWI, and Python took over several of its ideas, among them indentation as grammar and very high-level data types. The first public version, 0.9.0, followed in February 1991.
+
+The name has nothing to do with reptiles. Van Rossum was reading the published scripts of *Monty Python's Flying Circus* and wanted a name that was "short, unique, and slightly mysterious". The official tutorial still [encourages references to the show](https://docs.python.org/3/tutorial/appetite.html), which is why example variables in Python documentation are so often called `spam` and `eggs`.
+
+> By the way, the language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Making references to Monty Python skits in documentation is not only allowed, it is encouraged!
+
+In December 2008, Python 3.0 broke compatibility with earlier versions to fix old design flaws, and one fix was that all text became Unicode. In Python 2, a Greek word was by default a sequence of bytes: `len('Μῆνιν')` gave 11 instead of 5. The switch took more than a decade, and Python 2 reached its end of life on 1 January 2020.
+
+Van Rossum stepped down as the language's ["Benevolent Dictator For Life"](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life) in 2018. Since then, an elected Steering Council has guided Python's development, with a new version every October. This course uses Python 3.14.
+
+::: {#py-versions}
+![Python versions including their support and deprecation status as of October 2026. [python.org/versions](https://devguide.python.org/versions/)](../images/py_ver_light.png){#fig-py-ver-light .light-content fig-alt="Python versions"}
+
+![Python versions including their support and deprecation status as of October 2026. [python.org/versions](https://devguide.python.org/versions/)](../images/py_ver_dark.png){#fig-py-ver-dark .dark-content fig-alt="Python versions"}
+
+:::
+
 
 ## Concept check
 
