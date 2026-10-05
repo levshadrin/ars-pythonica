@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -599,11 +634,130 @@ Pollin, Christopher. 2026. <span>“Asymmetric <span>Amplification</span>. <span
 </section>
 <section id="why-python" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="why-python"><span class="header-section-number">1.3</span> <em>Why</em> Python?</h2>
-<p><em>Coming soon.</em></p>
+<p><strong>Beginner friendly</strong></p>
+<p>As we will soon see, Python reads much like a natural, predicate-focused language with a small, strict grammar. Its vocabulary divides the way a linguist would expect:</p>
+<ul>
+<li>there is a closed class of 35 <em>keywords</em>: logical operators and function words such as <code>and</code>, <code>or</code>, <code>not</code>, <code>if</code>, <code>for</code>, <code>in</code> and <code>return</code>, which you can neither redefine nor add to;</li>
+<li>there is an open class of <em>names</em> that you coin yourself, such as <code>verse</code>, <code>lemma</code> or <code>word_count</code>;</li>
+<li>pre-defined functions behave like imperative verbs: <code>print()</code> displays what is to be printed as its argument, <code>open()</code> opens the file from your computer;</li>
+<li>methods attach a verb to its subject, as in <code>'ΜΗΝΙΝ'.lower()</code></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>verse <span class="op">=</span> <span class="st">'arma virumque cano Troiae qui primus ab oris'</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> verse.split()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(words))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Even without knowing any Python, you can probably guess that these three lines split a line of Virgil into words, count them, and print <code>8</code>. This is why Python is often called “executable pseudocode”: the informal, half-English notation programmers use to sketch an algorithm is often not far from valid Python.</p>
+<p>Learning the rules of Python is akin to learning a new languages - once you memorize basic syntax and some crucial ‘keywords’, you’ll be able to communicate. Eloquence comes with learning formatting style conventions and abstract patterns to use them as building blocks when designing your programs.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="PEP8 in your step">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>PEP8 in your step
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There’s a difference between grammatically correct English and eloquent, bedazzled, stylistically sound English. In the same vein, Python’s style guide called <a href="https://peps.python.org/pep-0008/">PEP 8</a> offers a trove of suggestions on improving your coding practices.</p>
+<p>It rests on the observation that “code is read much more often than it is written”, and the language’s guiding aphorisms, <a href="https://peps.python.org/pep-0020/"><em>The Zen of Python</em></a>, state it plainly: “Readability counts.”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Zen of Python">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Zen of Python
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="ae0c52a0" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> this</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+<p>Like any grammar, Python’s is unforgiving: a missing quotation mark or bracket is a <code>SyntaxError</code>. Unlike a reviewer, however, the interpreter tells you exactly where it stumbled, and learning to read these messages is a skill we will practice regularly throughout the course.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Coding in Latin? What?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coding in Latin? What?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are plenty programming languages, whose syntax is written using other natural languages besides English. In fact, nothing prevents you from naming a Python variable in Greek or Latin – just keep in mind that this code will be very difficult to evaluate for anyone else!</p>
+<p>One example of a non-English programming language is <a href="https://metacpan.org/release/DCONWAY/Lingua-Romana-Perligata-0.50/view/lib/Lingua/Romana/Perligata.pm">Lingua::Romana::Perligata</a>, a a Perl 5 module that can be used to write functional code using a syntax based on classical Latin.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode perl code-with-copy"><code class="sourceCode perl"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#! /usr/local/bin/perl -w</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">use</span> <span class="fu">Lingua::Romana</span>::<span class="fu">Perligata</span>;</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>nexto stringum reperimentum da.     <span class="co"># $next = pos $string;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>nextum stringo reperimento da.      <span class="co"># pos $string = $next;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>inserto stringum tum unum tum duo excerpementum da.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># $insert = substr($string,1,2);</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>insertum stringo unum tum duo excerpemento da.</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                                    <span class="co"># substr($string,1,2) = $insert;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>clavis hashus nominamentum da.      <span class="co"># @keys = keys %hash;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>clava hashibus nominamento da.      <span class="co"># keys %hash = @keys;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<p><strong>High-level language</strong></p>
+<p>Programming languages differ in how close they stay to the machine. <em>Low-level</em> languages, such as machine code, assembly and, to a degree, C, work in terms of the processor: memory addresses, bytes, registers. To count the words in a line of Virgil in C, you would reserve memory for the text, walk through it character by character, and decide yourself what counts as a space. <em>High-level</em> languages like Python hide these details behind abstractions such as <em>strings</em>, <em>lists</em> and <em>dictionaries</em>, so that you describe <em>what</em> you want rather than <em>how</em> the hardware should do it.</p>
+<p>An editorial analogy: a low-level language is a diplomatic transcription, recording every abbreviation and letterform; a high-level language is the normalized reading text, which lets you concentrate on the meaning. Python also handles Unicode out of the box, so polytonic Greek needs no special treatment:</p>
+<div id="799c8970" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">'Μῆνιν ἄειδε θεά'</span>.split()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>['Μῆνιν', 'ἄειδε', 'θεά']</code></pre>
+</div>
+</div>
+<p>The price is speed: Python runs more slowly than C. For research, however, the scarce resource is usually our time, not the computer’s.</p>
+<p><strong>Easily accessible packages</strong></p>
+<p>Python comes with “batteries included”: its standard library already covers much of what this course needs, from <code>re</code> (regular expressions) and <code>unicodedata</code> (normalising Greek diacritics) to <code>xml.etree</code> (TEI files) and <code>csv</code> (tables). Beyond that, the <a href="https://pypi.org/">Python Package Index</a> lists over 900,000 projects (as of October 2026), each installable with a single command.</p>
+<p>Several of them were built for our source languages:</p>
+<ul>
+<li><a href="https://cltk.org/">CLTK</a>, the Classical Language Toolkit: natural language processing for pre-modern languages, including Latin and Ancient Greek;</li>
+<li><a href="https://huggingface.co/latincy">LatinCy</a> and <a href="https://github.com/centre-for-humanities-computing/odyCy">odyCy</a>: pipelines for the widely used NLP library spaCy, for Latin and Ancient Greek respectively;</li>
+<li><a href="https://stanfordnlp.github.io/stanza/">Stanza</a>: Stanford’s NLP library, with models for Latin and Ancient Greek.</li>
+</ul>
 </section>
 <section id="history" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="history"><span class="header-section-number">1.4</span> History</h2>
-<p><em>Coming soon.</em></p>
+<p>Python began as a holiday project. In December 1989, Guido van Rossum, a programmer at the Centrum Wiskunde &amp; Informatica (CWI) in Amsterdam, was looking for something to keep him busy over Christmas. He had helped build ABC, a teaching language developed at CWI, and Python took over several of its ideas, among them indentation as grammar and very high-level data types. The first public version, 0.9.0, followed in February 1991.</p>
+<p>The name has nothing to do with reptiles. Van Rossum was reading the published scripts of <em>Monty Python’s Flying Circus</em> and wanted a name that was “short, unique, and slightly mysterious”. The official tutorial still <a href="https://docs.python.org/3/tutorial/appetite.html">encourages references to the show</a>, which is why example variables in Python documentation are so often called <code>spam</code> and <code>eggs</code>.</p>
+<blockquote class="blockquote">
+<p>By the way, the language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Making references to Monty Python skits in documentation is not only allowed, it is encouraged!</p>
+</blockquote>
+<p>In December 2008, Python 3.0 broke compatibility with earlier versions to fix old design flaws, and one fix was that all text became Unicode. In Python 2, a Greek word was by default a sequence of bytes: <code>len('Μῆνιν')</code> gave 11 instead of 5. The switch took more than a decade, and Python 2 reached its end of life on 1 January 2020.</p>
+<p>Van Rossum stepped down as the language’s <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">“Benevolent Dictator For Life”</a> in 2018. Since then, an elected Steering Council has guided Python’s development, with a new version every October. This course uses Python 3.14.</p>
+<div id="py-versions">
+<div id="fig-py-ver-light" class="light-content quarto-float quarto-figure quarto-figure-center anchored" alt="Python versions">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-py-ver-light-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/py_ver_light.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;1.5: Python versions including their support and deprecation status as of October 2026. python.org/versions"><img src="../images/py_ver_light.png" class="light-content img-fluid figure-img" alt="Python versions"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-py-ver-light-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Python versions including their support and deprecation status as of October 2026. <a href="https://devguide.python.org/versions/">python.org/versions</a>
+</figcaption>
+</figure>
+</div>
+<div id="fig-py-ver-dark" class="dark-content quarto-float quarto-figure quarto-figure-center anchored" alt="Python versions">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-py-ver-dark-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/py_ver_dark.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;1.6: Python versions including their support and deprecation status as of October 2026. python.org/versions"><img src="../images/py_ver_dark.png" class="dark-content img-fluid figure-img" alt="Python versions"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-py-ver-dark-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: Python versions including their support and deprecation status as of October 2026. <a href="https://devguide.python.org/versions/">python.org/versions</a>
+</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="concept-check" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="concept-check"><span class="header-section-number">1.5</span> Concept check</h2>
